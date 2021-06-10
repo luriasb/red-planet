@@ -1,0 +1,56 @@
+<template>
+  <div class="relative">
+    <!-- <img
+      src="~/assets/img/hero01.jpg"
+      class="absolute inset-0 object-cover w-full h-full"
+      alt=""
+    /> -->
+    <div
+      :class="
+        parallax
+          ? 'bg-cover bg-local sm:bg-fixed bg-center'
+          : 'bg-cover bg-center'
+      "
+      :style="`background-image: url(${image})`"
+    >
+      <div
+        class="px-4 py-12 sm:py-48 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-60"
+      >
+        <div class="flex flex-col items-center justify-between xl:flex-row">
+          <div class="w-full mb-12 xl:mb-0 text-center">
+            <h2
+              class="mb-0 sm:mb-6 font-sans text-3xl lg:text-6xl font-bold tracking-tight text-white sm:leading-none"
+            >
+              {{ title }}
+            </h2>
+            <p class="mb-4 text-lg lg:text-2xl text-white text-gray-300">
+              {{ subTitle }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    subTitle: {
+      type: String,
+      required: true,
+    },
+    image: {
+      type: String,
+      required: true,
+    },
+    parallax: {
+      type: Boolean,
+      default: false,
+    },
+  },
+}
+</script>
