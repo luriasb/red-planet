@@ -7,7 +7,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const page = await $content('lodestar').fetch()
+    const page = await $content('index').fetch()
     // eslint-disable-next-line
     return {
       page,
