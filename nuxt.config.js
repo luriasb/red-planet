@@ -1,3 +1,6 @@
+// eslint-disable-next-line nuxt/no-cjs-in-config
+const remark = require('remark')
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -16,7 +19,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: 'stylecheet',
+        rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;800&display=swap',
       },
@@ -28,6 +31,16 @@ export default {
 
   tailwindcss: {
     jit: true,
+    config: {
+      purge: {
+        content: ['content/**/**.md'],
+      },
+      transform: {
+        md: (content) => {
+          return remark().process(content)
+        },
+      },
+    },
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

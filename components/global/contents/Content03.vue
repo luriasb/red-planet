@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="bodyClasses">
     <div class="relative">
       <!-- <img
         src="~/assets/img/banner02.jpg"
@@ -26,16 +26,33 @@
     <div
       class="relative px-0 lg:px-8 pt-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24"
     >
-      <div class="flex bg-white px-8 py-8 lg:py-28 pb-24 lg:-mt-28">
+      <div
+        :class="[
+          'flex bg-white px-8 py-8 lg:py-28 pb-24 lg:-mt-28',
+          bodyClasses,
+        ]"
+      >
         <div class="px-0 sm:mx-auto sm:text-center">
-          <h2 class="text-center text-3xl font-extrabold mb-8 text-gray-300">
+          <h2
+            :class="[
+              'text-center text-3xl font-extrabold mb-8 text-gray-300',
+              titleClasses,
+            ]"
+          >
             {{ title }}
           </h2>
           <div v-for="service in services" :key="service.title">
-            <h3 class="text-2xl font-extrabold mb-4 text-black">
+            <h3
+              :class="[
+                'text-2xl font-extrabold mb-4 text-black',
+                subTitleClasses,
+              ]"
+            >
               {{ service.title }}
             </h3>
-            <p class="mb-6 text-base text-black leading-normal">
+            <p
+              :class="['mb-6 text-base text-black leading-normal', textClasses]"
+            >
               {{ service.text }}
             </p>
           </div>
@@ -62,6 +79,22 @@ export default {
     image: {
       type: String,
       default: '/img/banner01.jpg',
+    },
+    bodyClasses: {
+      type: String,
+      default: '',
+    },
+    titleClasses: {
+      type: String,
+      default: '',
+    },
+    subTitleClasses: {
+      type: String,
+      default: '',
+    },
+    textClasses: {
+      type: String,
+      default: '',
     },
   },
 }

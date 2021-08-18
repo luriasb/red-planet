@@ -19,11 +19,19 @@
         <div class="flex flex-col items-center justify-between xl:flex-row">
           <div class="w-full mb-12 xl:mb-0 text-center">
             <h2
-              class="mb-0 sm:mb-6 font-sans text-3xl lg:text-6xl font-bold tracking-tight text-white sm:leading-none"
+              :class="[
+                'mb-0 sm:mb-6 text-3xl lg:text-6xl font-bold tracking-tight text-white sm:leading-none',
+                titleClasses,
+              ]"
             >
               {{ title }}
             </h2>
-            <p class="mb-4 text-lg lg:text-2xl text-white text-gray-300">
+            <p
+              :class="[
+                'mb-4 text-lg lg:text-2xl text-white text-gray-300',
+                subTitleClasses,
+              ]"
+            >
               {{ subTitle }}
             </p>
           </div>
@@ -50,6 +58,18 @@ export default {
     parallax: {
       type: Boolean,
       default: false,
+    },
+    bodyClasses: {
+      type: String,
+      default: '',
+    },
+    titleClasses: {
+      type: String,
+      default: '',
+    },
+    subTitleClasses: {
+      type: String,
+      default: '',
     },
   },
 }

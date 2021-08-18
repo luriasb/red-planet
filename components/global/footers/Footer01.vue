@@ -1,11 +1,14 @@
 <template>
   <div
-    class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+    :class="[
+      'px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8',
+      bodyClasses,
+    ]"
   >
     <div
       class="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row text-center sm:text-left"
     >
-      <p class="text-xl font-bold text-black">{{ text }}</p>
+      <p :class="['text-xl font-bold text-black', textClasses]">{{ text }}</p>
       <div
         class="flex items-center mt-4 space-x-4 sm:mt-0 justify-center sm:justify-items-end"
       >
@@ -58,6 +61,14 @@ export default {
     socialLinks: {
       type: Array,
       required: true,
+    },
+    bodyClasses: {
+      type: String,
+      default: '',
+    },
+    textClasses: {
+      type: String,
+      default: '',
     },
   },
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-50 bg-navbar">
+  <div :class="['relative z-50 bg-navbar text-gray-100', bodyClasses]">
     <div class="px-0 py-0 mx-auto w-full lg:px-4 text-base max-w-screen-xl">
       <div class="relative flex items-center justify-between py-6 lg:py-0">
         <ul class="flex items-center hidden space-x-8 lg:flex border-r py-5">
@@ -10,9 +10,7 @@
               title="Company"
               class="inline-flex items-center h-12 px-6"
             >
-              <span class="ml-2 font-bold tracking-wide text-gray-100"
-                >Tu sitio</span
-              >
+              <span class="ml-2 font-bold tracking-wide"> Tu sitio </span>
             </a>
           </li>
         </ul>
@@ -23,7 +21,7 @@
                 :href="`#${link.link}`"
                 aria-label="Our product"
                 :title="link.text"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
                 >{{ link.text }}</a
               >
             </li>
@@ -34,7 +32,7 @@
                 :href="link.link"
                 :aria-label="link.type"
                 :title="link.type"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
               >
                 <!-- Twitter -->
                 <svg
@@ -78,7 +76,7 @@
           <li>
             <a
               :href="hrefPhone"
-              class="inline-flex items-center justify-center h-12 px-6 font-base tracking-wide text-gray-400"
+              class="inline-flex items-center justify-center h-12 px-6 font-base tracking-wide"
               aria-label="Phone"
               title="Phone"
             >
@@ -147,7 +145,7 @@
                       href="#mision"
                       aria-label="Our product"
                       title="Our product"
-                      class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >Misión</a
                     >
                   </li>
@@ -156,7 +154,7 @@
                       href="#acerca"
                       aria-label="Our product"
                       title="Our product"
-                      class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >Acerca de tu empresa</a
                     >
                   </li>
@@ -165,7 +163,7 @@
                       href="#servicios"
                       aria-label="Product pricing"
                       title="Product pricing"
-                      class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >Servicios</a
                     >
                   </li>
@@ -174,7 +172,7 @@
                       href="#contacto"
                       aria-label="About us"
                       title="About us"
-                      class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >Contacto</a
                     >
                   </li>
@@ -184,7 +182,7 @@
                         href="/"
                         aria-label="Our product"
                         title="Our product"
-                        class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 mr-2"
+                        class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400 mr-2"
                       >
                         <svg
                           viewBox="0 0 24 24"
@@ -201,7 +199,7 @@
                         href="/"
                         aria-label="Product pricing"
                         title="Product pricing"
-                        class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 mr-2"
+                        class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400 mr-2"
                       >
                         <svg
                           viewBox="0 0 30 30"
@@ -219,7 +217,7 @@
                         href="/"
                         aria-label="About us"
                         title="About us"
-                        class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 mr-2"
+                        class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400 mr-2"
                       >
                         <svg
                           viewBox="0 0 24 24"
@@ -256,6 +254,18 @@ export default {
     phone: {
       type: String,
       required: true,
+    },
+    bodyClasses: {
+      type: String,
+      default: '',
+    },
+    titleClasses: {
+      type: String,
+      default: '',
+    },
+    textClasses: {
+      type: String,
+      default: '',
     },
   },
   data() {

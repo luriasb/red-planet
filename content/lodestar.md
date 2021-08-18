@@ -61,13 +61,21 @@ footerText: '© Copyright 2021'
 
 <div>
   <navigation-01 :links="links" :social-links="socialLinks" :phone="phone"></navigation-01>
-  <header-01 id="header01" :title="headerTitle" :sub-title="headerSubTitle" :image="hero01" parallax></header-01>
+  <header-01 id="header01" :title="headerTitle" :sub-title="headerSubTitle" :image="hero01" parallax ></header-01>
   <content-01 id="mision" :text="content01Text"></content-01>
   <banner-01 id="banner01" :image="banner01" parallax></banner-01>
   <content-02 id="acerca" :title="content02Title" :text1="content02Text1" :text2="content02Text2" ></content-02>
-  <content-03 id="servicios" :title="servicesTitle" :services="services" :image="banner02" parallax></content-03>
+  <content-03 id="servicios" :title="servicesTitle" :services="services" :image="banner02" parallax ></content-03>
   <banner-01 :image="banner03" parallax></banner-01>
   <content-04 id="contacto" :title="contactTitle" :adress="contactAdress" :mail="contactMail" :tel="contactTel" ></content-04>
   <banner-01 :image="banner04"></banner-01>
   <footer-01 :text="footerText" :social-links="socialLinks" ></footer-01>
 </div>
+
+
+<!-- 
+  title-classes
+  sub-title-classes
+  text-classes
+  body-classes
+-->
