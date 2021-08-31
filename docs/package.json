@@ -1,0 +1,19 @@
+{
+  "name": "red-planet-docs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "Bernardo Lezama",
+    "email": "lezamaber@gmail.com"
+  },
+  "repository": "/red-planet-docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
