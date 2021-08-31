@@ -29,6 +29,8 @@ Componente especial para colocar la navegación del sitio, siempre debe de ser e
 
 [Link](https://redplanet.devlez.com/lodestar/)
 
+![Navigation 01](~@assets/navigation-01.png "Navigation 01")
+
 ### Uso
 
 ```
