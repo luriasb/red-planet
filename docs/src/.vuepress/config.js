@@ -34,29 +34,46 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
+    displayAllHeaders: true,
     nav: [
       {
         text: 'Guía',
         link: '/guide/',
       },
+      {
+        text: 'Apéndice',
+        link: '/appendix/',
+      },
     ],
-    sidebar: {
-      '/guide/': [
+    sidebar: [
+
         {
           title: 'Guía',
           collapsable: false,
+          sidebarDepth: 1,
+          path: '/guide/',
           children: [
-            '',
-            'components/components',
-            'components/navigation',
-            'components/headers',
-            'components/banners',
-            'components/content',
-            'deploy'
+            '/guide/',
+            '/guide/components/components',
+            '/guide/components/navigation',
+            '/guide/components/headers',
+            '/guide/components/banners',
+            '/guide/components/content',
+            '/guide/deploy'
+          ]
+        },
+        {
+          title: 'Apéndice',
+          collapsable: false,
+          sidebarDepth: 1,
+          path: '/appendix/',
+          children: [
+            '/appendix/filezilla',
+            '/appendix/errors',
+            '/appendix/console',
           ]
         }
-      ],
-    }
+    ]
   },
 
   /**
