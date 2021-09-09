@@ -1,6 +1,8 @@
 # Estructura de una página
 
-En el panel izquierdo encontraran todos los archivos del proyecto, no se susten, solo deben de preocuparse por la carpeta `content` la cual contiene el archivo que se debe de modificar para crear una página. El archivo es el `index.md`. Denle click para abrirlo y poderlo editar.
+En el panel izquierdo encontraran todos los archivos del proyecto, no se asusten, solo deben de preocuparse por la carpeta `content` la cual contiene el archivo que se debe de modificar para crear una página. El archivo es el `index.md`. Denle click para abrirlo y poderlo editar.
+
+![Estructura 01](~@assets/estructure-01.png "Estructura 01")
 
 Notarán que el archivo tiene la siguiente estructura:
 
@@ -76,4 +78,4 @@ Los componentes son los templates en donde se mostrará la información, estos s
 
 En las siguientes páginas de la documentación mostraremos los distintos componentes que se tienen disponibles.
 
-Todos los componentes vienen con un ejemplo de uso, puedes copiar las variables y componentes como referencia y a partir del ejemplo crear tus propias versiones.
+Todos los componentes vienen con un ejemplo de uso, puedes copiar las variables y componentes como referencia y a partir del ejemplo crear tus propias versiones. O, si lo prefieres, puedes copiar el código de un sitio entero en la seccion "Demos" e ir modificando los componentes. 

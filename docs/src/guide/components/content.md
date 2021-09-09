@@ -46,6 +46,8 @@ Contenido que muestra una párrafo de texto
 
 [Link](https://redplanet.devlez.com/lodestar#mision)
 
+![Content 01](~@assets/content-01.png "Content 01")
+
 ### Uso
 
 ```
@@ -73,6 +75,8 @@ Contenido que muestra dos bloques de texto
 ### Ejemplo
 
 [Link](https://redplanet.devlez.com/lodestar#acerca)
+
+![Content 02](~@assets/content-02.png "Content 02")
 
 ### Uso
 
@@ -113,6 +117,8 @@ Contenido ideal para mostrar servicios
 ### Ejemplo
 
 [Link](https://redplanet.devlez.com/lodestar#servicios)
+
+![Content 03](~@assets/content-03.png "Content 03")
 
 ### Uso
 
@@ -156,6 +162,8 @@ Contenido ideal para mostrar un mapa y datos de contacto
 ### Ejemplo
 
 [Link](https://redplanet.devlez.com/lodestar#contacto)
+
+![Content 04](~@assets/content-04.png "Content 04")
 
 ### Uso
 
