@@ -2,7 +2,7 @@
 
 Espacio para mostrar algunos de los demos de Red planet:
 
-Demo 00-General
+[Demo 00-General](https://redplanet.devlez.com/lodestar/)
 
 ```
 ---
@@ -77,6 +77,7 @@ footerText: '© Copyright 2021'
   <banner-01 :image="banner04"></banner-01>
   <footer-01 :text="footerText" :social-links="socialLinks" ></footer-01>
 </div>
+
 ---
 
 ```

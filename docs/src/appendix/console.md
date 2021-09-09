@@ -1,8 +1,8 @@
-# Consola
+# Consola/Terminal
 
-La consola de línea de comandos o Interfaz de Línea de Comandos (CLI), por su acrónimo en inglés de Command Line Interface (CLI), es un método que permite a las personas dar instrucciones a algún programa informático por medio de una línea de texto simple.
+Una consola de comandos es un programa que recibe todo aquello que se escribe en la terminal y se encarga de convertirlo en instrucciones que el sistema operativo pueda entender y ejecutar. Estos comandos se escriben en una línea de texto simple.
 
-En estos proyectos de Red Planet, usamos la consola para darla instrucciones al programa para que corra ciertos comandos y así poder visualizar nuestros proyectos. 
+En estos proyectos de Red Planet, usamos la consola para dar instrucciones al programa para que corra ciertos comandos y así poder visualizar nuestros proyectos. 
 
 En este apartado, explicaremos para que sirve cada uno de los comandos usados.
 

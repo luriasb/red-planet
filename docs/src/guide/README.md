@@ -38,6 +38,8 @@ Posteriormente entra a la carpeta con el siguiente comando:
 cd red-planet
 ```
 
+Nota importante: Si descargaste la carpeta zip desde GitHub, ya no es necesario clonar el repositorio. Siempre hay que tener en cuenta que debemos descargar la última versión del repositorio.
+
 ### Instalar dependencias
 
 Abrir el proyecto con VS Code, en el menú de __Archivo__ dar click a __Abrír...__ y seleccionar la carpeta del proyecto de Red Planet.
