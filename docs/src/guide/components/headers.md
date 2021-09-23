@@ -38,6 +38,8 @@ hero01: /img/hero01.jpg
 
 Para cambiar la imagen del Header, primero necesitamos guardar la imagen que queremos. Para  hacer esto, nos vamos a la carpeta que descargamos del repositorio, la abrimos, buscamos la carpeta `static`, le damos click y abrimos la carpeta `img`, en este carpeta colocaremos las imágenes que vayamos a utlizar en todo nuestro proyecto.
 
+Tamaño recomendado de la imagen: 2015x1080 píxeles.
+
 ![Change Header 01](~@assets/change-01.png "Change Header 01")
 
 Ya que tengamos nuestra imagen en la carpeta, en nuestro código solamente cambiaremos el nombre de la imagen.
