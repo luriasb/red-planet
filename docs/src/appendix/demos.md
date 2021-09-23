@@ -1,11 +1,12 @@
-# Demos
+# Sitios Demo
 
 Espacio para mostrar algunos de los demos de Red planet:
 
-[Demo 00-General](https://redplanet.devlez.com/lodestar/)
+[Demo 00-General](https://redplanet.devlez.com/lodestar/) (Sitio Lodestar, ruta: `content/lodestar.md`)
 
 ```
 ---
+
 headerTitle: EL NOMBRE DE TU EMPRESA Chula
 headerSubTitle: Tu slogan llamativo y contundente
 
@@ -78,6 +79,6 @@ footerText: '© Copyright 2021'
   <footer-01 :text="footerText" :social-links="socialLinks" ></footer-01>
 </div>
 
----
-
 ```
+
+

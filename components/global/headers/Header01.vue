@@ -1,10 +1,5 @@
 <template>
   <div class="relative">
-    <!-- <img
-      src="~/assets/img/hero01.jpg"
-      class="absolute inset-0 object-cover w-full h-full"
-      alt=""
-    /> -->
     <div
       :class="
         parallax
@@ -74,3 +69,5 @@ export default {
   },
 }
 </script>
+<style>
+</style>

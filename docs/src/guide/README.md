@@ -2,7 +2,6 @@
 
 Red Planet es una herramienta creada en [Life on Mars](https://lifeonmars.com.mx) con el objetivo de generar sitios web sencillos reutilizando un grupo de componentes predefinidos, la cuál, facilite el flujo de trabajo que se tiene en la agencia.
 
-
 ## Requisitos
 
 Para poder usar la herramienta es necesario tener instalado lo siguiente:
@@ -11,6 +10,14 @@ Para poder usar la herramienta es necesario tener instalado lo siguiente:
 - [VS Code](https://code.visualstudio.com/) (Indispensable)
 - [Filezilla](https://filezilla-project.org/)(Indispensable)
 - [Git](https://git-scm.com/) (Recomendado)
+
+
+## Pasos a seguir
+
+1. Instala el proyecto y sus dependencias como se especifica en la sección de [Instalación](/guide/#instalacion).
+2. Crea tu sitio como se especifica en la sección de [Estructura de una página](/guide/components/components.html).
+3. Sube tu proyecto a un servidor como se detalla en la sección de [Deployment](/guide/deploy)
+
 
 ## Instalación
 

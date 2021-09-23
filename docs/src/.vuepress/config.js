@@ -71,6 +71,7 @@ module.exports = {
             '/appendix/filezilla',
             '/appendix/errors',
             '/appendix/console',
+            '/appendix/demos',
           ]
         }
     ]
