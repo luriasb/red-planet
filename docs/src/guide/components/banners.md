@@ -19,6 +19,8 @@ Para poder cambiar nuestras imágenes de banners, seguiremos los mismos pasos qu
 
 ![Banner 01](~@assets/banner-01.png "Banner 01")
 
+Tamaño recomendado de la imagen: 1920x1080 píxeles.
+
 ### Uso
 
 ```
@@ -35,6 +37,8 @@ banner01: /img/banner01.jpg
 ### Ejemplo
 
 ![Banner 02](~@assets/banner-02.png "Banner 02")
+
+Tamaño recomendado de la imagen: 1920x1080 píxeles.
 
 ### Uso
 
@@ -53,6 +57,8 @@ banner02: /img/banner02.jpg
 
 ![Banner 03](~@assets/banner-03.png "Banner 03")
 
+Tamaño recomendado de la imagen: 1920x1080 píxeles.
+
 ### Uso
 
 ```
@@ -69,6 +75,8 @@ banner03: /img/banner03.jpg
 ### Ejemplo
 
 ![Banner 04](~@assets/banner-04.png "Banner 04")
+
+Tamaño recomendado de la imagen: 1920x650 píxeles.
 
 ### Uso
 
