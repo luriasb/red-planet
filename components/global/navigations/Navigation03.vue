@@ -8,9 +8,9 @@
               href="/"
               aria-label="Company"
               title="Company"
-              class="inline-flex items-center h-12 px-6"
+              class="inline-flex items-center h-12 px-6 bg-yellow-500"
             >
-              <span class="ml-2 font-bold tracking-wide"> Tu sitio </span>
+              <span class="ml-2 font-bold tracking-wide "> Tu sitio </span>
             </a>
           </li>
         </ul>

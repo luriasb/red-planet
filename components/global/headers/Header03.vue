@@ -8,10 +8,17 @@
       "
       :style="`background-image: url(${image})`"
     >
+      
       <div
         class="px-4 py-12 sm:py-48 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-60">
         <div class="flex flex-col items-center justify-between xl:flex-row">
+          
           <div class="w-full mb-12 xl:mb-0 text-center">
+          
+              <svg class="justify-center mx-auto w-5 md:w-8 lg:w-10 h-10 md:h-15 lg:h-20 mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 78" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L43 39L0 78L0 0Z" fill="#FF7E00"/>
+              </svg>
+
             <h2
               :class="[
                 'mb-0 sm:mb-6 text-3xl lg:text-6xl font-bold tracking-tight text-white sm:leading-none',
@@ -20,14 +27,6 @@
             >
               {{ title }}
             </h2>
-            <!--<p
-              :class="[
-                'mb-4 text-lg lg:text-2xl text-white text-gray-300 inset-y-0 right-0',
-                subTitleClasses,
-              ]"
-            >
-              {{ subTitle }}
-            </p>-->
           </div>
         </div>
         <div class="links sm:block "> <!--Button-->
