@@ -19,19 +19,17 @@ socialLinks:
 phone: '55 5555 5555'
 ---
 
-# Navigation 
+# Menús de navegación
 
 Componente especial para colocar la navegación del sitio, siempre debe de ser el primer componente que se ponga en el sitio:
 
-## Navigation 01
+## Menú 01
 
-### Ejemplo
-
-[Link](https://redplanet.devlez.com/lodestar/)
+### Imagen
 
 ![Navigation 01](~@assets/navigation-01.png "Navigation 01")
 
-### Uso
+### Código
 
 ```
 ---
@@ -56,8 +54,12 @@ phone: '55 5555 5555'
 
 #### Parámetros
 
-| Nombre      | Tipo        | Descripción |
-| ----------- | ----------- | ----------- |
-| links       | Array       | Entradas del menú |
-| social-links| Array       | Links a redes sociales, se puede usar *twitter*, *fb* e *ig*       |
-| phone       | String      | Teléfono       |
+| Nombre      | Descripción                                                  |  Tipo  |
+| ----------- | ------------------------------------------------------------ | ------ |
+| links       | Entradas del menú                                            | Array  |
+| social-links| Links a redes sociales, se puede usar *twitter*, *fb* e *ig* | Array  |
+| phone       |                                                Teléfono      | String |
+
+### Ejemplo
+
+[Link](https://redplanet.devlez.com/lodestar/)

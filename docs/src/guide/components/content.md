@@ -42,13 +42,11 @@ Componentes para mostrar distintos tipos de contenidos
 
 Contenido que muestra una párrafo de texto
 
-### Ejemplo
-
-[Link](https://redplanet.devlez.com/lodestar#mision)
+### Imagen
 
 ![Content 01](~@assets/content-01.png "Content 01")
 
-### Uso
+### Código
 
 ```
 ---
@@ -62,9 +60,13 @@ También funciona bastante bien para resaltar un breve mensaje que cierre con un
 
 #### Parámetros
 
-| Nombre       | Tipo        | Descripción |
+| Nombre       | Descripción        | Tipo |
 | -----------  | ----------- | ----------- |
-| content01Text| String     | Texto a mostrar|
+| content01Text| Texto a mostrar    | String |
+
+### Link
+
+[Link](https://redplanet.devlez.com/lodestar#mision)
 
 
 ## Content 02
@@ -72,13 +74,11 @@ También funciona bastante bien para resaltar un breve mensaje que cierre con un
 
 Contenido que muestra dos bloques de texto
 
-### Ejemplo
-
-[Link](https://redplanet.devlez.com/lodestar#acerca)
+### Imagen
 
 ![Content 02](~@assets/content-02.png "Content 02")
 
-### Uso
+### Código
 
 ```
 ---
@@ -102,25 +102,26 @@ experiencias a tus clientes. También puedes hablar sobre tu trabajo en equipo"
 
 #### Parámetros
 
-| Nombre      | Tipo        | Descripción |
+| Nombre      | Descripción        | Tipo |
 | ----------- | ----------- | ----------- |
-| title       | String      | Título de la sección|
-| text01      | String     | Contenido del primer bloque de texto|
-| text02      | String     | Contenido del segundo bloque de texto|
+| title       |Título de la sección       | String|
+| text01      |Contenido del primer bloque de texto      | String|
+| text02      | Contenido del segundo bloque de texto     | String|
 
+### Link
+
+[Link](https://redplanet.devlez.com/lodestar#acerca)
 
 ## Content 03
 ------
 
 Contenido ideal para mostrar servicios
 
-### Ejemplo
-
-[Link](https://redplanet.devlez.com/lodestar#servicios)
+### Imagen
 
 ![Content 03](~@assets/content-03.png "Content 03")
 
-### Uso
+### Código
 
 ```
 ---
@@ -148,10 +149,14 @@ banner02: /img/banner02.jpg
 
 | Nombre      | Tipo        | Descripción |
 | ----------- | ----------- | ----------- |
-| title       | String      | Título de la sección|
-| services    | Array       | Arreglo con el contenido de los servicios|
-| image       | String      | Ruta a la imagen de fondo |
-| parallax    | Boolean     | Define si la imagen de fondo tendrá efecto parallax |
+| title       |  Título de la sección    | String |
+| services    |  Arreglo con el contenido de los servicios     | Array |
+| image       |  Ruta a la imagen de fondo     |  String|
+| parallax    |  Define si la imagen de fondo tendrá efecto parallax    |  Boolean|
+
+### Link
+
+[Link](https://redplanet.devlez.com/lodestar#servicios)
 
 
 ## Content 04
@@ -159,13 +164,11 @@ banner02: /img/banner02.jpg
 
 Contenido ideal para mostrar un mapa y datos de contacto
 
-### Ejemplo
-
-[Link](https://redplanet.devlez.com/lodestar#contacto)
+### Imagen
 
 ![Content 04](~@assets/content-04.png "Content 04")
 
-### Uso
+### Imagen
 
 ```
 ---
@@ -183,7 +186,11 @@ contactTel: '55 5555 5555'
 
 | Nombre      | Tipo        | Descripción |
 | ----------- | ----------- | ----------- |
-| title       | String      | Título de la sección|
-| adress      | String      | Dirección de contacto|
-| mail        | String      | Correo electrónico |
-| tel         | String      | Teléfono |
+| title       | Título de la sección      | String|
+| adress      | Dirección de contacto      | String|
+| mail        |  Correo electrónico     | String |
+| tel         | Teléfono      | String |
+
+### Link
+
+[Link](https://redplanet.devlez.com/lodestar#contacto)

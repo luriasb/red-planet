@@ -1,8 +1,14 @@
-# Sitios Demo
+# CATÁLOGO DE SITIOS PRE-ARMADOS (DEMOS)
+
+## Sitio 00 - General (Lodestar)
 
 Espacio para mostrar algunos de los demos de Red planet:
 
-[Demo 00-General](https://redplanet.devlez.com/lodestar/) (Sitio Lodestar, ruta: `content/lodestar.md`)
+### Imagen
+
+![Demo 01](~@assets/demo-01.png "Demo 01")
+
+### Código
 
 ```
 ---
@@ -81,4 +87,7 @@ footerText: '© Copyright 2021'
 
 ```
 
+### Link
+
+[Demo 00-General](https://redplanet.devlez.com/lodestar/) (Sitio Lodestar, ruta: `content/lodestar.md`)
 
