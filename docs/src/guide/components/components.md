@@ -1,10 +1,18 @@
-# Estructura de una página
+# CONSTRUCCIÓN DE UN SITIO RED PLANET
 
-En el panel izquierdo encontraran todos los archivos del proyecto, no se asusten, solo deben de preocuparse por la carpeta `content` la cual contiene el archivo que se debe de modificar para crear una página. El archivo es el `index.md`. Denle click para abrirlo y poderlo editar.
+## Estructura de una página
+
+Al terminar la instalación de dependencias, podemos comenzar con la construcción de nuestro sitio. Lo siguiente es ubicarnos en el directorio que se encuentra dentro del panel __Explorador__ al lado izquierdo de la pantalla. 
+
+Ya en el directorio, veremos todos los archivos del proyecto. Esto puede llegar a sorprendernos, pero no pasa nada. Sólo trabajaremos dentro de la carpeta `content`, en el archivo `index.md.` 
+
+Para llegar a este archivo, la ruta es:
+
+`RED PLANET-MAIN → content → index.md`
 
 ![Estructura 01](~@assets/estructure-01.png "Estructura 01")
 
-Notarán que el archivo tiene la siguiente estructura:
+Después de haber localizado dicho archivo, damos click en él y lo comenzamos a editar. El archivo tiene la siguiente estructura:
 
 ```
 ---
@@ -18,14 +26,20 @@ Notarán que el archivo tiene la siguiente estructura:
 
 </div>
 ```
+El archivo `index.md` está dividido en 2 bloques de edición: las __variables__ (la parte de arriba entre guiones) y los __componentes__ (la parte de abajo con sentencias entre signos de <>).
+
+Para construir un sitio Red Planet, trabajaremos en ambos bloques.
+
 
 ## Variables
 
-La primera sección es la de Variables, notese que esta sección está delimitado por 3 guiones seguidos `---` al inicio y al final, aquí se iran colocando todos los textos, imágenes y datos en general que se deben de mostrar en el sitio.
+El primer bloque es el de variables. Este bloque se delimita por 3 guiones continuos `- - - ` al inicio y al final. En este bloque se colocan los textos, imágenes y datos en general que se mostrarán en el sitio.
+
+Hay 3 tipos de variables:
 
 ### Variables de tipo String
 
-Las variables de tipo string se utilizan para definir textos, la estructura que se utilizará para definir una variable es la siguiente:
+Las variables de tipo string se utilizan para __definir textos__. Su estructura es la siguiente:
 
 ```
 headerTitle: EL NOMBRE DE TU EMPRESA
@@ -35,7 +49,7 @@ En este ejemplo, el nombre de la variable es `headerTitle` y el contenido de la 
 
 ### Variables para imágenes
 
-En el caso de una imagen debemos de poner la ruta relativa a la imagen, por ejemplo:
+En el caso de las imágenes,  debemos de poner la ruta relativa a la imagen que se quiere mostrar. Por ejemplo:
 
 ```
 hero01: /img/hero01.jpg
@@ -43,7 +57,7 @@ hero01: /img/hero01.jpg
 
 ### Variables de tipo array
 
-En algunos casos es necesario definir variables de tipo array, las cuales contienen varias veces el mismo tipo de información, por ejemplo:
+Este tipo de variables, por lo regular contienen varias veces el mismo tipo de información. Por ejemplo:
 
 ```
 links:
@@ -59,7 +73,9 @@ links:
 
 ## Componentes
 
-Los componentes son los templates en donde se mostrará la información, estos se deben de ir colocando en el orden en el que se quiere que se muestren en la sección de componentes, por ejemplo:
+El segundo bloque es el de componentes. Este bloque se delimita por un juego de etiquetas html   `( <div> y </div> )` al inicio y al final. Todos los componentes que coloquemos deben de ir dentro de estas dos etiquetas.
+
+Los componentes son los templates de nuestra herramienta que marcan el lugar en donde se mostrará la información. Por lo tanto, se deben ir colocando conforme al orden en el que queremos que se ubiquen. Por ejemplo:
 
 ``` html
 <div>
@@ -76,6 +92,6 @@ Los componentes son los templates en donde se mostrará la información, estos s
 </div>
 ```
 
-En las siguientes páginas de la documentación mostraremos los distintos componentes que se tienen disponibles.
+Más adelante en esta misma documentación, existe todo un catálogo de componentes que se tienen disponibles. Todos vienen con un ejemplo de uso, en donde se puede copiar las variables y sus respectivos componentes. Estos se pueden tomar como referencia y a partir del ejemplo, construir el proyecto que queremos. 
 
-Todos los componentes vienen con un ejemplo de uso, puedes copiar las variables y componentes como referencia y a partir del ejemplo crear tus propias versiones. O, si lo prefieres, puedes copiar el código de un sitio entero en la seccion "Demos" e ir modificando los componentes. 
+De igual manera y para simplificar el trabajo, también existe un catálogo de sitios pre-construidos, para copiar su estructura por completo y sólo modificar la información de las variables.

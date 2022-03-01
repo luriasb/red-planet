@@ -15,13 +15,13 @@ Para poder cambiar nuestras imágenes de banners, seguiremos los mismos pasos qu
 
 ## Banner 01
 
-### Ejemplo
+### Imagen
 
 ![Banner 01](~@assets/banner-01.png "Banner 01")
 
-Tamaño recomendado de la imagen: 1920x1080 píxeles.
+Tamaño de la imagen: 1920x1080 píxeles.
 
-### Uso
+### Código
 
 ```
 ---
@@ -34,13 +34,13 @@ banner01: /img/banner01.jpg
 
 ## Banner 02
 
-### Ejemplo
+### Imagen
 
 ![Banner 02](~@assets/banner-02.png "Banner 02")
 
-Tamaño recomendado de la imagen: 1920x1080 píxeles.
+Tamaño de la imagen: 1920x1080 píxeles.
 
-### Uso
+### Código
 
 ```
 ---
@@ -53,13 +53,13 @@ banner02: /img/banner02.jpg
 
 ## Banner 03
 
-### Ejemplo
+### Imagen
 
 ![Banner 03](~@assets/banner-03.png "Banner 03")
 
-Tamaño recomendado de la imagen: 1920x1080 píxeles.
+Tamaño de la imagen: 1920x1080 píxeles.
 
-### Uso
+### Código
 
 ```
 ---
@@ -72,13 +72,13 @@ banner03: /img/banner03.jpg
 
 ## Banner 04
 
-### Ejemplo
+### Imagen
 
 ![Banner 04](~@assets/banner-04.png "Banner 04")
 
 Tamaño recomendado de la imagen: 1920x650 píxeles.
 
-### Uso
+### Código
 
 ```
 ---
@@ -91,7 +91,7 @@ banner04: /img/banner04.jpg
 
 #### Parámetros
 
-| Nombre      | Tipo        | Descripción |
+| Nombre      | Descripción        | Tipo |
 | ----------- | ----------- | ----------- |
-| image       | String      | Ruta a la imagen de fondo |
-| parallax    | Boolean     | Define si la imagen de fondo tendrá efecto parallax       |
+| image       | Ruta a la imagen de fondo      | String |
+| parallax    | Define si la imagen de fondo tendrá efecto parallax     | Boolean       |
