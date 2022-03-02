@@ -1,6 +1,6 @@
 ---
-name: Navigation
-title: Navigation
+name: Catálogo de componentes
+title: Catálogo de componentes
 
 # variables
 
@@ -19,7 +19,7 @@ socialLinks:
 phone: '55 5555 5555'
 ---
 
-# Menús de navegación
+## Menús de navegación
 
 Componente especial para colocar la navegación del sitio, siempre debe de ser el primer componente que se ponga en el sitio:
 

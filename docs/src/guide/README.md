@@ -1,4 +1,4 @@
-# INTRODUCCIÓN Y REQUISITOS (ANTES DE TRABAJAR UN PROYECTO RED PLANET)
+# Introducción y requisitos (Antes de trabajar un proyecto Red Planet)
 
 ## Introducción
 
