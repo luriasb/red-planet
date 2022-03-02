@@ -1,4 +1,4 @@
-# Consola/Terminal
+# Comandos de Consola/Terminal
 
 Una consola de comandos es un programa que recibe todo aquello que se escribe en la terminal y se encarga de convertirlo en instrucciones que el sistema operativo pueda entender y ejecutar. Estos comandos se escriben en una línea de texto simple.
 

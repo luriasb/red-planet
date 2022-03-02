@@ -1,6 +1,6 @@
 ---
-name: Content
-title: Content
+name: Bloques de contenido
+title: Bloques de contenido
 
 # variables
 
@@ -32,13 +32,12 @@ contactMail: 'info@tuempresa.com'
 contactTel: '55 5555 5555'
 ---
 
-# Content
+# Bloques de contenido
 
 Componentes para mostrar distintos tipos de contenidos
 
 
 ## Content 01
-------
 
 Contenido que muestra una párrafo de texto
 

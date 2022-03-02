@@ -1,6 +1,6 @@
 ---
-name: Headers
-title: Headers
+name: Encabezados (Headers / Hero section)
+title: Encabezados (Headers / Hero section)
 
 # variables
 
@@ -9,8 +9,6 @@ headerSubTitle: Tu slogan llamativo y contundente
 
 hero01: /img/hero01.jpg
 ---
-
-# Headers
 
 Sección principal del sitio
 

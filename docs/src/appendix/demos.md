@@ -1,4 +1,4 @@
-# CATÁLOGO DE SITIOS PRE-ARMADOS (DEMOS)
+# Catálogo de sitios pre-armados (Demos)
 
 ## Sitio 00 - General (Lodestar)
 
