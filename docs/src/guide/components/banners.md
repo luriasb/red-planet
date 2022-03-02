@@ -76,7 +76,7 @@ banner03: /img/banner03.jpg
 
 ![Banner 04](~@assets/banner-04.png "Banner 04")
 
-Tamaño recomendado de la imagen: 1920x650 píxeles.
+Tamaño de la imagen: 1920x650 píxeles.
 
 ### Código
 
