@@ -15,9 +15,7 @@ Sección en la parte inferior de un sitio.
 
 ### Imagen
 
-![Banner 01](~@assets/banner-01.png "Banner 01")
-
-Tamaño de la imagen: 1920x1080 píxeles.
+![Footer 01](~@assets/footer-01.png "Footer 01")
 
 ### Código
 
@@ -29,3 +27,9 @@ footerText: '© Copyright 2021'
 <footer-01 :text="footerText" :social-links="socialLinks" ></footer-01>
 
 ```
+
+#### Parámetros
+
+| Nombre       | Descripción        | Tipo |
+| -----------  | ----------- | ----------- |
+| footerText | Texto a mostrar    | String |

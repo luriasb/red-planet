@@ -55,10 +55,7 @@ module.exports = {
           children: [
             '/guide/',
             '/guide/components/components',
-            '/guide/components/navigation',
-            '/guide/components/headers',
-            '/guide/components/banners',
-            '/guide/components/content',
+            '/guide/components/building',
             '/guide/deploy'
           ]
         },
@@ -66,12 +63,26 @@ module.exports = {
           title: 'Apéndice',
           collapsable: false,
           sidebarDepth: 1,
-          path: '/appendix/',
+          path: '/appendix/filezilla',
           children: [
             '/appendix/filezilla',
             '/appendix/errors',
             '/appendix/console',
-            '/appendix/demos',
+            '/appendix/tutorial'
+          ]
+        },
+        {
+          title: 'Catálogo de componentes',
+          collapsable: false,
+          sidebarDepth: 1,
+          path: '/guide/components/navigation',
+          children: [
+            '/guide/components/navigation',
+            '/guide/components/headers',
+            '/guide/components/banners',
+            '/guide/components/content',
+            '/guide/components/footers',
+            '/guide/demos/demos'
           ]
         }
     ]
