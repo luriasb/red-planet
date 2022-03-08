@@ -16,10 +16,10 @@ Construir un sitio Red Planet es muy sencillo. Sólo hay que seguir los siguient
 
 3. Guardamos nuestro trabajo. Para guardar:
 
--En Mac: `cmd + S`.
--En Windows: `ctrl + S`.
--En ambos casos: dar click en __Archivo__ y después en __Guardar__ (Save).
--Archivo → Guardar.
+ -En Mac: `cmd + S`. <br>
+ -En Windows: `ctrl + S`. <br>
+ -En ambos casos: dar click en __Archivo__ y después en __Guardar__ (Save). <br>
+ -Archivo → Guardar.
 
 Al guardar, suceden dos cosas: La terminal trabaja y nos indica que se han generado los cambios en el sitio. Después de esto, los cambios se verán reflejados en el servidor local.
 
@@ -117,7 +117,7 @@ hero01: /img/Imagen01.jpg
 
 Es decir:
 
-__hero01: /img/hero01.jpg por hero01: /img/Imagen01.jpg__
+__hero01: /img/hero01.jpg__ por __hero01: /img/Imagen01.jpg__
 
 11. Guardamos y verificamos los cambios en el servidor local.
 

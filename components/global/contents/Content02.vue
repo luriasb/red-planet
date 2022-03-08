@@ -23,31 +23,13 @@
     >
       <div class="w-full sm:mx-auto sm:text-left">
         <p class="mb-3 text-base">
-          <!-- {{ text1 }} -->
-          A las personas les gusta conocer la forma en la que trabajan las
-          empresas. Por esta razón existe este espacio, para que hables sobre
-          qué hace tu empresa. Además, es una gran oportunidad para decirle a la
-          gente qué ofreces, en qué te diferencias de los demás y sobre todo,
-          por qué eres la mejor opción para el público.
-          <br /><br />
-          Aprovecha para hablar sobre las motivaciones que tiene tu empresa y de
-          tus procesos para ofrecer productos o servicios de calidad. Puedes
-          mencionar tus compromisos con tus clientes para que confíen en tu
-          equipo y en tu marca.
+           {{ text1 }} 
         </p>
       </div>
       <div class="w-full sm:mx-auto sm:text-left">
         <p class="mb-3 text-base">
-          <!-- {{ text2 }} -->
-          Usa este espacio para hablar sobre tu experiencia. Cuéntale a la gente
-          cuántos años llevas en el mercado y cómo has evolucionado para brindar
-          mejores experiencias a tus clientes. También puedes hablar sobre tu
-          trabajo en equipo y tus procesos para rendir mejores resultados.
-          <br /><br />
-          Piensa en todas esas cosas que te gustaría que tu público conociera
-          sobre tu empresa y de todo el esfuerzo detrás de lo que ofreces para
-          cautivarlos. Este espacio es una oportunidad para dar a conocer lo que
-          casi nadie sabe de tu negocio y puedes aprovecharlo de forma positiva.
+           {{ text2 }} 
+          
         </p>
       </div>
     </div>
