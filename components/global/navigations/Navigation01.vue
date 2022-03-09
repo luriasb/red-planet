@@ -10,7 +10,7 @@
               title="Company"
               class="inline-flex items-center h-12 px-6"
             >
-              <span class="ml-2 font-bold tracking-wide"> Tu sitio </span>
+              <span class="ml-2 font-bold tracking-wide"> {{ siteName }} </span>
             </a>
           </li>
         </ul>
@@ -118,7 +118,7 @@
                   >
                     <span
                       class="ml-2 text-base font-extrabold tracking-wide text-white uppercase"
-                      >Tu sitio</span
+                      >{{ siteName }}</span
                     >
                   </a>
                 </div>
@@ -252,6 +252,10 @@ export default {
       required: true,
     },
     phone: {
+      type: String,
+      required: true,
+    },
+    siteName: {
       type: String,
       required: true,
     },

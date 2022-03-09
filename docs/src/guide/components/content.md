@@ -4,7 +4,6 @@ title: Bloques de contenido
 
 # variables
 
-
 content01Text: 'Este es un gran lugar para la misión de tu empresa. También funciona bastante bien para resaltar un breve mensaje que cierre con una "llamada a la acción".'
 
 content02Title: ACERCA TU EMPRESA
@@ -69,7 +68,6 @@ También funciona bastante bien para resaltar un breve mensaje que cierre con un
 
 
 ## Content 02
-------
 
 Contenido que muestra dos bloques de texto
 
@@ -112,7 +110,6 @@ experiencias a tus clientes. También puedes hablar sobre tu trabajo en equipo"
 [Link](https://redplanet.devlez.com/lodestar#acerca)
 
 ## Content 03
-------
 
 Contenido ideal para mostrar servicios
 
@@ -159,7 +156,6 @@ banner02: /img/banner02.jpg
 
 
 ## Content 04
-------
 
 Contenido ideal para mostrar un mapa y datos de contacto
 
@@ -175,20 +171,46 @@ contactTitle: 'Ubicación y contacto'
 contactAdress: 'Tu calle No. 100 Zona de la ciudad. Tu ciudad.'
 contactMail: 'info@tuempresa.com'
 contactTel: '55 5555 5555'
+contactMaps: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15057.179229334852!2d-99.02394515!3d19.356383549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd4fd1c54e5b%3A0xa13a0d882c49b856!2sEscuela%20Secundaria%20T%C3%A9cnica%20N%C2%B0%2081%20%22Justo%20Sierra%20M%C3%A9ndez%22!5e0!3m2!1ses!2smx!4v1646761024944!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
 ---
 
-<content-04 id="contacto" :title="contactTitle" :adress="contactAdress" :mail="contactMail" :tel="contactTel" ></content-04>
+<content-04 id="contacto" :title="contactTitle"  :mail="contactMail" :tel="contactTel" :google-maps-url="contactMaps"></content-04>
 
 ```
 
+### Importante
+
+En este componente vemos una variable llamada `contactMaps`, esta sirve para mostrar un mapa con la ubicación de la empresa. Para poder utilizar esta función debemos:
+
+1. Ir a Google Maps y buscar la ubicación deseada. Una vez en Google Maps buscaremos el botón __"Compartir"__ y le daremos click.
+
+![Content 04-02](~@assets/content-04-02.png "Content 04-02")
+
+2. Nos saldrá una ventana y buscamos el botón __"Insertar un mapa"__, le damos click y nos saldrá una parte que contiene un pequeño código y un botón que dice __"Copiar Html"__. Le damos click al botón `Copiar Html` y regresamos a nuestro archivo `index.md`.
+
+![Content 04-03](~@assets/content-04-03.png "Content 04-03")
+
+3. Una vez dentro de nuestro index, buscamos nuestra variable __"contactMaps"__ y pegamos el código pegado desde Google Maps. Aquí veremos que nuestro código tiene dos propiedades, una llamada __width__ y otra llamada __height__. Estas dos propiedades deben ser eliminadas para no interferir en la configuración de nuestro mapa.
+
+![Content 04-04](~@assets/content-04-04.png "Content 04-04")
+
+4. Una vez borradas estas propiedades, nuestro código quedaría así:
+
+![Content 04-05](~@assets/content-04-05.png "Content 04-05")
+
+5. Y en nuestro sitio quedaría así: 
+
+![Content 04-06](~@assets/content-04-06.png "Content 04-06")
+
 #### Parámetros
 
-| Nombre      | Tipo        | Descripción |
+| Nombre      | Descripción        | Tipo |
 | ----------- | ----------- | ----------- |
 | title       | Título de la sección      | String|
 | adress      | Dirección de contacto      | String|
 | mail        |  Correo electrónico     | String |
 | tel         | Teléfono      | String |
+| google-maps-url | Código html que da Google Maps para embeber un mapa en un sitio web      | String |
 
 ### Link
 

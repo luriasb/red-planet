@@ -25,7 +25,7 @@ Para poder trabajar un proyecto Red Planet, es necesario tener instalado el repo
 
 Sólo es necesario hacer la instalación de una sola manera. Si se descarga la carpeta .Zip desde GitHub, ya no es necesario clonar el repositorio y viceversa.
 
-Importante: Siempre hay que tener en cuenta que debemos descargar la última versión del repositorio. La última versión siempre es la que está disponible en GitHub, por lo que si se tienen archivos anteriores ya descargados en la computadora, es necesario desecharlos.
+__Importante__: Siempre hay que tener en cuenta que debemos descargar la última versión del repositorio. La última versión siempre es la que está disponible en GitHub, por lo que si se tienen archivos anteriores ya descargados en la computadora, es necesario desecharlos.
 
 ## Opción 1: Instalación manual
 
@@ -35,7 +35,7 @@ Para la instalación manual, hay que seguir los siguientes pasos:
 
 2. Descargar el proyecto, usando el botón verde de código (Code) y después, en el botón verde, Descargar.zip.
 
-` Repositorio → Código (Code) → Descargar .Zip } `
+` Repositorio → Código (Code) → Descargar .Zip `
 
 ![Clon 01](~@assets/git-01.png "Clon 01")
 
@@ -67,7 +67,7 @@ Para instalar las dependencias del proyecto se realizan los siguientes pasos:
 
 2. Ir al menú __Archivo__, dar click en __Abrir__ y seleccionar la carpeta del proyecto.
 
-Archivo → Abrir → Seleccionar carpeta del proyecto.
+`Archivo → Abrir → Seleccionar carpeta del proyecto.`
 
 3. Abrir la terminal en el VS Code.
 
@@ -115,6 +115,6 @@ npm run dev
 - Abrir liga en Windows: `alt + click en la liga`.
 - O en cualquiera de los casos, copiar la liga de la terminal y pegarla en el browser que mejor nos funcione. 
 
-10. Al abrir la liga del servidor local, encontraremos una página en blanco. Sin embargo, conforme modifiquemos el proyecto, podremos ir observando nuestro avance en esta misma página.
-
 ![Dependencia 03](~@assets/dep-03.png "Dependencia 03")
+
+10. Al abrir la liga del servidor local, encontraremos una página en blanco. Sin embargo, conforme modifiquemos el proyecto, podremos ir observando nuestro avance en esta misma página.

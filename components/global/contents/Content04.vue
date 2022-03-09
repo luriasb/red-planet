@@ -17,15 +17,19 @@
       ]"
     >
       <div class="px-4 w-full md:w-1/2">
-        <img
+        <!-- <img
           class="object-cover object-center rounded float-right w-full"
           alt="hero"
-          src="~/assets/img/mapa.jpg"
-        />
+          :url= "image"
+        /> -->
+        <div v-html="googleMapsUrl" class="w-full map-responsive" >
+
+        </div>
       </div>
       <div
         class="w-full md:w-1/2 px-4 pt-4 lg:pr-24 flex flex-col md:items-start md:text-left lg:mb-16 mb-0 items-left text-left"
       >
+      <div v-if="adress != ''">
         <h5
           :class="[
             'text-2xl font-extrabold mb-1 text-gray-900',
@@ -37,6 +41,7 @@
         <p :class="['text-base mb-8 leading-snug', textClasses]">
           {{ adress }}
         </p>
+      </div>
         <h5
           :class="[
             'text-2xl font-extrabold mb-1 text-gray-900',
@@ -59,6 +64,7 @@
 
 <script>
 export default {
+
   props: {
     title: {
       type: String,
@@ -66,7 +72,8 @@ export default {
     },
     adress: {
       type: String,
-      required: true,
+      required: false, 
+      default: '',
     },
     mail: {
       type: String,
@@ -78,7 +85,7 @@ export default {
     },
     image: {
       type: String,
-      default: '/img/banner01.jpg',
+      default: '',
     },
     bodyClasses: {
       type: String,
@@ -96,8 +103,39 @@ export default {
       type: String,
       default: '',
     },
+    googleMapsUrl: {
+      type: String,
+      default: '',
+    }
   },
 }
 </script>
 
-<style></style>
+<style>
+
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+</style>
