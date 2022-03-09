@@ -210,7 +210,7 @@ En este componente vemos una variable llamada `contactMaps`, esta sirve para mos
 | adress      | Dirección de contacto      | String|
 | mail        |  Correo electrónico     | String |
 | tel         | Teléfono      | String |
-| maps         | Mapa      | String |
+| google-maps-url | Código html que da Google Maps para embeber un mapa en un sitio web      | String |
 
 ### Link
 
