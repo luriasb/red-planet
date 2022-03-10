@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Red Planet es una herramienta de, [Life On Mars](https://lifeonmars.com.mx) (LOM), creada con el objetivo de generar sitios sencillos con una estructura one page, a través del uso de un grupo de componentes predefinidos. Facilitando así, el flujo de trabajo de LOM en este tipo de proyectos.
+Red Planet es una herramienta de [Life On Mars](https://lifeonmars.com.mx) (LOM), creada con el objetivo de generar sitios sencillos con una estructura one page, a través del uso de un grupo de componentes predefinidos. Facilitando así, el flujo de trabajo de LOM en este tipo de proyectos.
 
 Red Planet tiene como finalidad, generar sitios web accesibles para negocios en crecimiento (PyME’s). Por lo que generar una página web Red Planet debe ser ágil, rápido y sencillo.
 
@@ -33,13 +33,13 @@ Para la instalación manual, hay que seguir los siguientes pasos:
 
 1. Entrar al [repositorio](https://github.com/luriasb/red-planet) en GitHub.
 
-2. Descargar el proyecto, usando el botón verde de código (Code) y después, en el botón verde, Descargar.zip.
+2. Descargar el proyecto, dando click en el botón verde de código (Code) y después, en Descargar . Zip.
 
 ` Repositorio → Código (Code) → Descargar .Zip `
 
 ![Clon 01](~@assets/git-01.png "Clon 01")
 
-3. Una vez descargado el .Zip del repositorio, descomprimir el archivo y abrirlo con Visual Studio Code.
+3. Una vez descargado el .Zip del repositorio, descomprimir el archivo y abrir la carpeta resultante con VS Code.
 
 ## Opción 2: Instalación clonando el repositorio con Git
 
@@ -76,7 +76,7 @@ Para instalar las dependencias del proyecto se realizan los siguientes pasos:
 - O dar click en el botón __Ver__ de la barra de menú y después en __Terminal__
 - `Ver → Terminal`
 
-4. Dentro de la terminal, es necesario verificar que ya tenemos instalado el Node. Para esto escribir y ejecutar el comando:
+4. Dentro de la terminal, es necesario verificar que ya tenemos instalado el Node. Para esto, escribir y ejecutar el comando:
 
 ``` bash
 node -v
@@ -102,14 +102,14 @@ npm install
 
 ![Dependencia 01](~@assets/dep-01.png "Dpendencia 01")
 
-8. A continuación, abriremos el servidor local. Escribir y ejecutar el comando:
+8. A continuación, escribir y ejecutar el comando:
 
 ``` bash
 npm run dev
 ```
 ![Dependencia 02](~@assets/dep-02.png "Dpendencia 02")
 
-9. Esperar a que trabaje la terminal. Al finalizar encontraremos un liga con el servidor local de nuestro proyecto. Normalmente es [https://localhost:3000](https://localhost:3000)
+9. Esperar a que trabaje la terminal. Al finalizar encontraremos una liga con el servidor local de nuestro proyecto. Normalmente es [https://localhost:3000](https://localhost:3000)
 
 - Abrir liga en Mac: `cmd + click en la liga`.
 - Abrir liga en Windows: `alt + click en la liga`.

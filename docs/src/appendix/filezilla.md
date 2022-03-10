@@ -16,7 +16,7 @@ Instalar FileZilla en nuestra computadora es muy sencillo:
 
 3. En la siguiente pantalla, damos click en el botón del mismo nombre que aparece en color verde. 
 
-El texto que indica el sistema operativo, puede variar dependiendo del sistema operativo de nuestra computadora. No existe un paso de selección intermedio.
+El texto que indica el sistema operativo, puede variar dependiendo del mismo que use nuestra computadora. No existe un paso de selección intermedio.
 
 ![FileZilla 02](~@assets/file-02.png "FileZilla 02")
 ![FileZilla 03](~@assets/file-03.png "FileZilla 03")
