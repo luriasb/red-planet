@@ -4,7 +4,7 @@
 
 Para tener nuestro proyecto de Red Planet en línea, un paso necesario, es crear el espacio correspondiente dentro del servidor. Para esto:
 
-1. Iniciamos sesión en el servicio de alojamiento (GoDaddy, Site Ground, etc).
+1. Iniciamos sesión en el servicio de alojamiento (GoDaddy, SiteGround, etc).
 
 2. Abrimos el cPanel.
 
@@ -53,13 +53,15 @@ Ya que hemos terminado de trabajar en nuestro sitio, antes de ponerlo en línea,
 npm run generate
 ```
 
-![Save project 03](~@assets/save-03.png "Save project 03")
+![Save project 03](~@assets/save-03.png "Save project 03") 
 
 2. Al finalizar la ejecución, se creará una carpeta en la raíz del proyecto llamada ` dist `, misma en donde se encontrarán los archivos que se subirán al servidor.
 
+![Save project 03-01](~@assets/save-07-02.png "Save project 03-01")
+
 De manera práctica, encontraremos dicha carpeta, dentro de la carpeta de archivos del proyecto en nuestra computadora.
 
-![Save project 03](~@assets/save-03.png "Save project 03")
+![Save project 03-02](~@assets/save-07-01.png "Save project 03-02")
 
 3. Con esto realizado, podemos proceder a hacer el upload al hosting.
 
@@ -104,4 +106,4 @@ Eventualmente, esta será la carpeta de destino a donde subiremos los archivos d
 
 ![Save project 09](~@assets/save-09.png "Save project 09")
 
-Para más referencias, se sugiere visitar el video correspondiente en el apéndice de la documentación.
+Para más referencias, se sugiere visitar el [video correspondiente](https://drive.google.com/file/d/1YD-GJD5vdtwbkKzvFdg_Cac4nKXbT8Yh/view) en el apéndice de la documentación.

@@ -21,17 +21,17 @@ Construir un sitio Red Planet es muy sencillo. Sólo hay que seguir los siguient
  -En ambos casos: dar click en __Archivo__ y después en __Guardar__ (Save). <br>
  -Archivo → Guardar.
 
-Al guardar, suceden dos cosas: La terminal trabaja y nos indica que se han generado los cambios en el sitio. Después de esto, los cambios se verán reflejados en el servidor local.
+Al guardar, suceden dos cosas: Primero, la terminal trabaja y nos indica que se han generado los cambios en el sitio. En segundo lugar, los cambios se verán reflejados en el servidor local.
 
 __Importante:__ Otra buena práctica, es que por cada juego de variable-componente que se vaya insertando en la construcción, se guarde nuestro trabajo. No debemos confiarnos, ya que el guardado sólo es manual, no automático.
 
-4. Repetimos estas dos acciones, bloque por bloque hasta completar la arquitectura de nuestro sitio entero.
+4. Repetimos estas dos acciones, bloque por bloque, hasta completar la arquitectura de nuestro sitio entero.
 
 5. Ya con el sitio armado, es más fácil dedicarnos a sustituir la información que aparecerá en las variables. Después de editar, guardamos.
 
 6. Revisamos que el sitio quede tal como lo queremos. Con o sin cambios, guardar una vez más. Si el sitio ya no tiene más ajustes, procedemos al deployment.
 
-Para más referencias, se sugiere visitar el video correspondiente en el apéndice de la documentación.
+Para más referencias, se sugiere visitar el [video correspondiente](https://drive.google.com/file/d/17qnikGitJQGpGyZHgTQN7CF21TOG6Utn/view) en el apéndice de la documentación.
 
 ## Cómo cambiar las fotografías en bloques de imágenes
 
@@ -125,7 +125,7 @@ __hero01: /img/hero01.jpg__ por __hero01: /img/Imagen01.jpg__
 
 ## Quitar el efecto parallax en bloques de imágenes
 
-Es posible que por alguna situación, se desee editar el efecto parallax de algún bloque de contenido que sea de imagen. Es importante hacer notar que el parallax se puede quitar de los bloques que lo tienen,pero no se puede poner en los bloques que no lo tienen.
+Es posible que por alguna situación, se desee editar el efecto parallax de algún bloque de contenido que sea de imagen. Es importante hacer notar que el parallax se puede quitar de los bloques que lo tienen, pero no se puede poner en los bloques que no lo tienen.
 
 Para editar este efecto, se realiza lo siguiente:
 
@@ -184,7 +184,7 @@ Después de haber localizado dicho archivo, damos click en él y lo comenzamos a
 
 3. Es tiempo de ir a Google Fonts y buscar la fuente deseada.
 
-4. Dentro de la fuente, seleccionamos los estilos que necesitamos dando click en `+ Select this style`.
+4. Dentro de la fuente, seleccionamos los estilos que necesitamos dando click en `+ Select this style`.  Se pueden seleccionar varios estilos, si así se desea.
 
 ![Change Typo 03](~@assets/change-typo-03.png "Change Typo 03")
 
@@ -218,7 +218,7 @@ Después de haber localizado dicho archivo, damos click en él y lo comenzamos a
 
 ![Change Typo 08](~@assets/change-typo-08.png "Change Typo 08")
 
-11. Guardamos el proyecto y corremos el servidor local. Usamos el comando:
+11. Guardamos el proyecto y corremos el servidor local. En la terminal usamos el comando:
 
 ```
 npm run dev 
@@ -255,7 +255,7 @@ Por ejemplo:
 
 ![Change Typo 14](~@assets/change-typo-14.png "Change Typo 14")
 
-16. Repetimos los pasos 13, 14 y 15 en todos los bloquea a los que se les desee cambiar la tipografía.
+16. Repetimos los pasos 13, 14 y 15 en todos los bloques a los que se les desee cambiar la tipografía.
 
 Si el texto a editar en vez de ser un encabezado es un cuerpo de texto, la línea de código cambia de `title-classes` a `text-classes`. 
 
@@ -275,7 +275,7 @@ Por ejemplo:
 
 ```
 
-Para más referencias, se sugiere visitar el video correspondiente en el apéndice de la documentación.
+Para más referencias, se sugiere visitar el [video correspondiente](https://drive.google.com/file/d/152A5OxiM2fHBDAiab_WaZmJk_nsH3ncT/view) en el apéndice de la documentación.
 
 ## Cambiar el color de las fuentes tipográficas
 
@@ -301,10 +301,10 @@ Después de haber localizado dicho archivo, damos click en él y lo comenzamos a
 
 4. En la nueva línea escribiremos lo siguiente:
 
-- El nombre del nuevo color seguido de dos puntos ` : ` 
-- Espacio ` `
-- Apóstrofe + código hexadecimal del nuevo color + apóstrofe ` ‘#ff0404’ `
-- Coma ` , `
+a.  El nombre del nuevo color seguido de dos puntos ` : ` <br>
+b.  Espacio ` ` <br>
+c.  Apóstrofe + código hexadecimal del nuevo color + apóstrofe ` ‘#ff0404’ ` <br>
+d.  Coma ` , `
 
 	La línea completa debe quedar:
 	
@@ -314,9 +314,9 @@ Después de haber localizado dicho archivo, damos click en él y lo comenzamos a
 
 __Importante__: Conseguir el código hexadecimal de colores puede parecer complejo, pero no lo es. Algunas maneras de conseguirlo son:
 
--Consulta el manual de identidad gráfica de la marca del sitio que estás desarrollando. En teoría, ahí deben venir indicados.
--Pide ayuda a un diseñador del equipo. Ellos te pueden indicar los hexadecimales de los colores a partir de Photoshop.
--Puedes consultar el hexadecimal de un color en [este sitio de códigos de colores html](https://htmlcolorcodes.com/es/), o en sitios similares.
+a.  Consulta el manual de identidad gráfica de la marca del sitio que estás desarrollando. En teoría, ahí deben venir indicados. <br>
+b.  Pide ayuda a un diseñador del equipo. Ellos te pueden indicar los hexadecimales de los colores a partir de Photoshop. <br>
+c.  Puedes consultar el hexadecimal de un color en [este sitio de códigos de colores html](https://htmlcolorcodes.com/es/), o en sitios similares.
 
 5. Repetimos el punto 4 por cada color que se desee agregar.
 
@@ -324,20 +324,20 @@ __Importante__: Conseguir el código hexadecimal de colores puede parecer comple
 
 7. Ubicamos el bloque de contenido al que deseamos cambiar el tipo de letra. A éste, le necesitamos agregar un código extra llamado “clases”. Las clases pueden ser:
 
-- title-classes para títulos.
-- sub-tittle-classes para subtítulos.
-- text-classes para cuerpos de texto.
-- body-classes para elementos de texto no definidos.
+a.  title-classes para títulos. <br>
+b.  sub-tittle-classes para subtítulos. <br>
+c.  text-classes para cuerpos de texto. <br>
+d.  body-classes para elementos de texto no definidos. <br>
 
-La sintaxis de las clases se componen por:
+La sintaxis de las clases se componen por: <br>
 
-- El tipo de clase.
-- Un signo de igual ` = `.
-- Comillas ` “ `.
-- La palabra ` text `.
-- Un guión ` - `.
-- El color.
-- Comillas ` “ `.
+a.  El tipo de clase. <br>
+b.  Un signo de igual ` = `. <br>
+c.  Comillas ` “ `. <br>
+d.  La palabra ` text `. <br>
+e.  Un guión ` - `. <br>
+f.  El color. <br>
+g.  Comillas ` “ `. <br>
 
 	Por ejemplo:
 
@@ -369,7 +369,7 @@ A agregarse el nuevo color:
 
 10. Los pasos 8 y 9 se repiten por cada bloque de contenido al que deseemos cambiar el color de la tipografía.
 
-Para más referencias, se sugiere visitar el video correspondiente en el apéndice de la documentación.
+Para más referencias, se sugiere visitar el [video correspondiente](https://drive.google.com/file/d/17K76hO4-un2T9_pfCrm53OZsI3OS6mr9/view) en el apéndice de la documentación.
 
 ## Cambiar el color del fondo (background) de algunos bloques de contenido
 
@@ -445,4 +445,4 @@ A agregarse el nuevo color:
 
 10. Los pasos 8 y 9 se repiten por cada bloque de contenido al que deseemos cambiar el color de la tipografía.
 
-Para más referencias, se sugiere visitar el video correspondiente en el apéndice de la documentación.
+Para más referencias, se sugiere visitar el [video correspondiente](https://drive.google.com/file/d/17K76hO4-un2T9_pfCrm53OZsI3OS6mr9/view) en el apéndice de la documentación.

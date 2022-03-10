@@ -37,7 +37,7 @@ El primer bloque es el de variables. Este bloque se delimita por 3 guiones conti
 
 Hay 3 tipos de variables:
 
-### Variables de tipo String
+### Variables de tipo string
 
 Las variables de tipo string se utilizan para __definir textos__. Su estructura es la siguiente:
 
@@ -92,6 +92,6 @@ Los componentes son los templates de nuestra herramienta que marcan el lugar en 
 </div>
 ```
 
-Más adelante en esta misma documentación, existe todo un catálogo de componentes que se tienen disponibles. Todos vienen con un ejemplo de uso, en donde se puede copiar las variables y sus respectivos componentes. Estos se pueden tomar como referencia y a partir del ejemplo, construir el proyecto que queremos. 
+Más adelante en esta misma documentación, existe todo un catálogo de bloques de contenido que se tienen disponibles. Todos vienen con un ejemplo de uso, en donde se puede copiar las variables y sus respectivos componentes. Estos se pueden tomar como referencia y a partir del ejemplo, construir el proyecto que queremos. 
 
 De igual manera y para simplificar el trabajo, también existe un catálogo de sitios pre-construidos, para copiar su estructura por completo y sólo modificar la información de las variables.
