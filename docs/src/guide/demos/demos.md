@@ -13,7 +13,7 @@ Espacio para mostrar algunos de los demos de Red planet:
 ```
 ---
 
-headerTitle: EL NOMBRE DE TU EMPRESA Chula 
+headerTitle: EL NOMBRE DE TU EMPRESA 
 headerSubTitle: Tu slogan llamativo y contundente
 
 hero01: /img/hero01.jpg
