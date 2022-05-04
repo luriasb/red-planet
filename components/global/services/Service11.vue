@@ -1,16 +1,16 @@
 <template>
-    <div class="container mx-auto">
-        <div class="mx-auto px-4 sm:px-6 lg:px-4 py-12">
-            <div class="text-center pb-12">
+    <div class="container mx-auto px-10 lg:px-24">
+        <div class="mx-auto py-12">
+            <div class="text-center pb-12 relative">
                 <h1 
-                :class="['font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900',
+                :class="['font-bold text-2xl md:text-4xl text-gray-900 title-rectangle',
                 titleClasses]
                 ">
                     {{ title }}
                 </h1>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 mx-4 md:mx-32">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 w-full ">
 
                 <div class="w-full bg-white overflow-hidden flex flex-col justify-center items-center "
                 v-for="card in cards" :key="card.title">
@@ -18,7 +18,7 @@
                         <img 
                         class="object-center h-72 w-auto object-cover" 
                         :src="card.image"
-                        alt="photo"> 
+                        alt=""> 
                         <div class="card-info"> <!--info hover-->
                             <div class=" flex flex-col items-center justify-around">
                                 <div class="flex space-x-6 sm:justify-center"
@@ -81,7 +81,7 @@
                     bodyClasses]
                     ">
                         <p 
-                        :class="['text-xl md:text-2xl text-gray-700 font-bold mb-2',
+                        :class="['text-xl md:text-2xl font-bold mb-2',
                         subtitleClasses]
                         ">
                             {{ card.title}}

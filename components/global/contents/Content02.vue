@@ -8,7 +8,7 @@
     <div class="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
       <h2
         :class="[
-          'max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-300 md:mx-auto',
+          'max-w-lg mb-6 text-2xl lg:text-3xl font-bold leading-none tracking-tight text-gray-300 md:mx-auto',
           titleClasses,
         ]"
       >

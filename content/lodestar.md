@@ -1,6 +1,6 @@
 ---
 
-headerTitle: EL NOMBRE DE TU EMPRESA Chula
+headerTitle: EL NOMBRE DE TU EMPRESA 
 headerSubTitle: Tu slogan llamativo y contundente
 
 hero01: /img/hero01.jpg
@@ -9,6 +9,7 @@ banner02: /img/banner02.jpg
 banner03: /img/banner03.jpg
 banner04: /img/banner04.jpg
 
+siteName: 'Tu sitio'
 links:
   - text: Misión
     link: 'mision'
@@ -54,28 +55,21 @@ contactTitle: 'Ubicación y contacto'
 contactAdress: 'Tu calle No. 100 Zona de la ciudad. Tu ciudad.'
 contactMail: 'info@tuempresa.com'
 contactTel: '55 5555 5555'
+contactMaps: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6220153408817!2d-99.10918055040719!3d19.42873094577654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1feaeaae914a7%3A0x309cc48e621dcf8b!2sLife%20On%20Mars!5e0!3m2!1ses!2smx!4v1646776847851!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
 
 footerText: '© Copyright 2021'
 
 ---
 
 <div>
-  <navigation-01 :links="links" :social-links="socialLinks" :phone="phone"></navigation-01>
+  <navigation-01 :site-name="siteName" :links="links" :social-links="socialLinks" :phone="phone"></navigation-01>
   <header-01 id="header01" :title="headerTitle" :sub-title="headerSubTitle" :image="hero01" parallax ></header-01>
   <content-01 id="mision" :text="content01Text"></content-01>
   <banner-01 id="banner01" :image="banner01" parallax></banner-01>
   <content-02 id="acerca" :title="content02Title" :text1="content02Text1" :text2="content02Text2" ></content-02>
   <content-03 id="servicios" :title="servicesTitle" :services="services" :image="banner02" parallax ></content-03>
   <banner-01 :image="banner03" parallax></banner-01>
-  <content-04 id="contacto" :title="contactTitle" :adress="contactAdress" :mail="contactMail" :tel="contactTel" ></content-04>
+  <content-04 id="contacto" :title="contactTitle" :adress="contactAdress" :mail="contactMail" :tel="contactTel" :google-maps-url="contactMaps" ></content-04>
   <banner-01 :image="banner04"></banner-01>
-  <footer-01 :text="footerText" :social-links="socialLinks" ></footer-01>
+  <footer-01 :text="footerText" :social-links="socialLinks"></footer-01>
 </div>
-
-
-<!-- 
-  title-classes
-  sub-title-classes
-  text-classes
-  body-classes
--->
