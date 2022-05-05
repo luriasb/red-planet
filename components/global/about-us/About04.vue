@@ -1,27 +1,70 @@
 <template>
-    <div class="w-screen"> <!--Main-->
-    <div class="w-full ">
-        <div class="w-full min-h-72">
-            <div class="bg-center bg-cover">
-                <img class="ml-auto mr-auto object-fill" src="~/static/img/about02.jpg" alt="">
-            </div>
+  <section class="py-20" :class="bodyClasses">
+    <div class="container mx-auto">
+      <div class="w-full px-4 min-h-72">
+        <div>
+          <img
+            class="object-fill w-full rounded"
+            src="~/static/img/service14.jpg"
+            alt=""
+          />
         </div>
-        <div class="px-8 2xl:px-32 py-8 lg:py-16 ml-auto mx-auto "> <!--Text-->
+      </div>
+      <div class="px-4 py-8 mx-auto ml-auto 2xl:px-32 lg:py-16">
         <div class="text-center sm:mx-auto">
-            <h3 class="mb-8 text-lg md:text-xl text-gray-900">
-                tincidunt elitz magnis nulla facilisis sagittis maecenas. sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet, massa 
-                fringilla leo orci. lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. there are many variations of 
-                passages of available but the 
-                majority have suffered.
-            </h3>
-            <h1 class="font-bold text-3xl md:text-5xl mb-8">Jessica Brown</h1>
-            <p class="text-base md:text-lg text-gray-700">
-                founder of avivon
-            </p>
+          <p
+            class="max-w-screen-md mx-auto mb-8 text-lg font-bold text-gray-500 md:text-xl"
+            :class="textClasses"
+          >
+            {{ text }}
+          </p>
+          <h3
+            v-if="name"
+            class="box-border p-0 m-0 font-sans text-4xl font-normal text-primary"
+          >
+            {{ name }}
+          </h3>
+          <span
+            v-if="post"
+            class="box-border p-0 m-0 text-base font-semibold leading-6 text-gray-500 border-b border-solid border-neutral-300"
+            >{{ post }}</span
+          >
         </div>
-    </div><!--Text-->
-</div>
-</div> <!--Main-->
-
-
+      </div>
+    </div>
+  </section>
 </template>
+<script>
+export default {
+  props: {
+    text: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      default: '',
+    },
+    post: {
+      type: String,
+      default: '',
+    },
+    image: {
+      type: String,
+      default: '/img/banner01.jpg',
+    },
+    bodyClasses: {
+      type: String,
+      default: '',
+    },
+    titleClasses: {
+      type: String,
+      default: '',
+    },
+    textClasses: {
+      type: String,
+      default: '',
+    },
+  },
+}
+</script>

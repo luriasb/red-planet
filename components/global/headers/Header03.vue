@@ -1,6 +1,7 @@
 <template>
-  <div class="relative">
+  <header class="relative">
     <div
+      class="h-screen"
       :class="
         parallax
           ? 'bg-cover bg-local sm:bg-fixed bg-center'
@@ -8,17 +9,11 @@
       "
       :style="`background-image: url(${image})`"
     >
-      
       <div
-        class="px-4 py-12 sm:py-48 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-60">
-        <div class="flex flex-col items-center justify-between xl:flex-row">
-          
+        class="px-4 py-40 sm:py-48 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-60 h-full flex flex-col"
+      >
+        <div class="flex flex-col items-center justify-center">
           <div class="w-full mb-12 xl:mb-0 text-center">
-          
-              <svg class="justify-center mx-auto w-5 md:w-8 lg:w-10 h-10 md:h-15 lg:h-20 mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 78" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L43 39L0 78L0 0Z" fill="#FF7E00"/>
-              </svg>
-
             <h2
               :class="[
                 'mb-0 sm:mb-6 text-3xl lg:text-6xl font-bold tracking-tight text-white sm:leading-none',
@@ -27,16 +22,31 @@
             >
               {{ title }}
             </h2>
+            <p
+              :class="[
+                'mb-4 text-lg lg:text-2xl text-white font-bold',
+                subTitleClasses,
+              ]"
+            >
+              {{ subTitle }}
+            </p>
+          </div>
+          <div v-if="buttonText" class="mt-8">
+            <!--Button-->
+            <ul class="flex menu justify-center">
+              <li>
+                <a
+                  :href="link"
+                  class="border-2 border-white-400 text-white font-bold px-2 py-4 md:px-7 md:py-4 rounded-md align-middle transition duration-500 hover:bg-white hover:text-black"
+                  >{{ buttonText }}</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="links sm:block "> <!--Button-->
-                <ul class="flex menu justify-center">
-                    <li><a href="#" class="border-2 border-white-400 text-white font-bold p-2 rounded-md align-middle transition duration-500 hover:bg-white hover:text-black">Ver más</a></li>
-                </ul>
-        </div><!--Button-->
       </div>
     </div>
-  </div>
+  </header>
 </template>
 <script>
 export default {
@@ -57,6 +67,14 @@ export default {
       type: Boolean,
       default: false,
     },
+    buttonText: {
+      type: String,
+      default: '',
+    },
+    link: {
+      type: String,
+      default: '',
+    },
     bodyClasses: {
       type: String,
       default: '',
@@ -72,5 +90,4 @@ export default {
   },
 }
 </script>
-<style>
-</style>
+<style></style>
