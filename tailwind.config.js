@@ -24,6 +24,7 @@ module.exports = {
     },
     colors: {
       navbar: '#29292a',
+      primary: '#ff7e00',
       ...defaultTheme.colors,
     },
     extend: {

@@ -1,42 +1,75 @@
 <template>
-    <div class="w-screen "> <!--Main-->
-    <div class="w-full ">
-        <div class="w-full min-h-72">
-            <div class="bg-center bg-cover ">
-                <img class="ml-auto mr-auto object-fill" src="~/static/img/about02.jpg" alt="">
-            </div>
+  <section class="py-20" :class="bodyClasses">
+    <div class="container mx-auto">
+      <div class="w-full px-4 mb-16 min-h-72">
+        <div class="">
+          <img class="object-fill w-full rounded" :src="image" alt="" />
         </div>
-        <div class=" ml-auto mr-auto align-middle px-4 py-6 2xl:px-32">
-            <div class="flex flex-wrap mx-4">
-                <!--grid column div 1-->
-                <div class="sm:w-1/2 lg:w-1/3 flex flex-col ">
-                    <!--grid content div 1-->
-                    <div class="md:px-10 py-4 md:py-12 text-2xl md:text-5xl font-bold text-center">
-                        We are trusted by more than 8,700 clients
-                    </div>
-                </div>
-                <div class="sm:w-1/2 lg:w-1/3 flex flex-col px-2">
-                    <!--grid content div 2-->
-                    <div class="md:px-10 py-4 md:py-12 text-lg md:text-xl">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tempora cum aspernatur laudantium
-                        est, amet corporis quam deleniti eius debitis ipsa quasi tenetur. Itaque dolorem facere dolore saepe
-                        dolores quaerat.
-                    </div>
-                </div>
-                <!--grid column div 3-->
-                <div class="sm:w-1/2 lg:w-1/3 flex flex-col px-2">
-                    <!--grid content div 3-->
-                    <div class="py-4 md:py-12 text-lg md:text-xl">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tempora cum aspernatur laudantium
-                        est, amet corporis quam deleniti eius debitis ipsa quasi tenetur. Itaque dolorem facere dolore saepe
-                        dolores quaerat.
-                    </div>
-                </div>
+      </div>
+      <div class="py-6 ml-auto mr-auto align-middle 2xl:px-32">
+        <div class="flex flex-wrap">
+          <div class="flex flex-col w-full px-4 lg:w-1/3">
+            <div class="relative">
+              <h3
+                class="pt-8 text-5xl font-bold leading-10 text-left title-rectangle"
+                :class="titleClasses"
+              >
+                {{ title }}
+              </h3>
             </div>
-
+          </div>
+          <div class="flex flex-col w-full px-4 sm:w-1/2 lg:w-1/3">
+            <p
+              class="pt-8 text-base font-semibold text-gray-500"
+              :class="textClasses"
+            >
+              {{ text01 }}
+            </p>
+          </div>
+          <div class="flex flex-col w-full px-4 sm:w-1/2 lg:w-1/3">
+            <p
+              class="pt-8 text-base font-semibold text-gray-500"
+              :class="textClasses"
+            >
+              {{ text02 }}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-</div> <!--Main-->
-
-
+  </section>
 </template>
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    text01: {
+      type: String,
+      required: true,
+    },
+    text02: {
+      type: String,
+      required: true,
+    },
+    image: {
+      type: String,
+      default: '/img/banner01.jpg',
+    },
+    bodyClasses: {
+      type: String,
+      default: '',
+    },
+    titleClasses: {
+      type: String,
+      default: '',
+    },
+    textClasses: {
+      type: String,
+      default: '',
+    },
+  },
+}
+</script>
