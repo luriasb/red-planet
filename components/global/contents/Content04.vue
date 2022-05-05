@@ -3,7 +3,7 @@
     <div class="container mx-auto flex mb-10 justify-center">
       <h2
         :class="[
-          'max-w-lg mb-6 font-body text-3xl font-bold leading-none tracking-tight text-gray-300 md:mx-auto uppercase',
+          'max-w-lg mb-6 font-body text-2xl lg:text-3xl font-bold leading-none tracking-tight text-gray-300 md:mx-auto uppercase mx-10 text-center',
           titleClasses,
         ]"
       >

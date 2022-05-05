@@ -35,7 +35,7 @@
         <div class="px-0 sm:mx-auto sm:text-center">
           <h2
             :class="[
-              'text-center text-3xl font-extrabold mb-8 text-gray-300',
+              'text-center text-2xl lg:text-3xl font-extrabold mb-8 text-gray-300',
               titleClasses,
             ]"
           >
@@ -44,7 +44,7 @@
           <div v-for="service in services" :key="service.title">
             <h3
               :class="[
-                'text-2xl font-extrabold mb-4 text-black',
+                'text-2xl lg:text-3xl font-extrabold mb-4 text-black',
                 subTitleClasses,
               ]"
             >
