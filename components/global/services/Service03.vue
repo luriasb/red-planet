@@ -13,16 +13,31 @@
       class="object-cover bg-center object-center w-full h-full" 
       :src="imageCard || backgroundCard" 
         > -->
-      <p class="lg:absolute lg:top-4 lg:left-4 text-white text-xl lg:text-3xl font-light px-8 py-12 2xl:p-20 " > 
-        {{ imageText }} 
+      <div class="px-4 lg:px-10 2xl:px-24 pb-16">
+      <p class=" text-white text-xl lg:text-3xl font-light pt-12 lg:pt-32" > 
+        {{ imageText }}
       </p>
+      <h3
+        v-if="name"
+        class=" box-border p-0 m-0 font-sans text-4xl font-normal text-white pt-12"
+        style="line-height: 1.1; letter-spacing: -1px"
+      >
+        {{ name }}
+      </h3>
+      <span
+        v-if="post"
+        class=" box-border p-0 m-0 text-base font-semibold leading-6 text-white border-b border-solid border-neutral-300 pt-4"
+      >
+        {{ post }}
+      </span>
+      </div>
   </div><!--Image-->
 
-  <div class="w-full lg:w-3/5 px-4 flex flex-wrap lg:px-24 py-20 "> <!--Main-->
+  <div class="w-full lg:w-3/5 px-4 flex flex-wrap lg:px-20 py-20 "> <!--Main-->
 
     <div class="mb-8 relative ">
         <h1 
-        :class="['text-2xl md:text-4xl font-bold title-rectangle', titleClasses
+        :class="['text-4xl font-bold title-rectangle', titleClasses
         ]">
             {{ title }}
         </h1>
@@ -42,19 +57,19 @@
               :src="card.icon" >
           </div>
           <h4 
-          :class="['text-xl md:text-3xl font-bold  py-8', titleClasses
+          :class="['text-2xl font-bold  py-8', titleClasses
           ]">
               {{ card.title }}
           </h4>
           <p 
-          :class="['text-sm md:text-base font-bold text-gray-500', textClasses
+          :class="['text-base font-bold text-gray-500', textClasses
           ]"
           >
           {{ card.text }}
           </p>
           <div class="flex">
           <a 
-          class="text-gray-700 p-2 font-bold my-6 text-xs md:text-lg min-w-24 hover:text-yellow-500 hover:underline text-center"
+          class="text-gray-700 p-2 font-bold my-6 text-xs md:text-lg min-w-24 transition duration-150 ease-in hover:text-yellow-500 hover:underline text-center"
           :href="card.link"
           v-if="card.link">
           {{ card.buttonText || 'Ver más' }} 
@@ -91,6 +106,14 @@ export default {
     imageText: {
       type: String,
       
+    },
+    name: {
+      type: String,
+      default: '',
+    },
+    post: {
+      type: String,
+      default: '',
     },
     bodyClasses: {
       type: String,

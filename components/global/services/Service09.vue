@@ -1,75 +1,71 @@
 <template>
-    <div 
-    :class="['container mx-auto py-10', 
-    bodyClasses]
-    "> <!--Main-->
-        <div class="flex justify-start mx-auto px-4 content-center px-10 lg:px-24">
-            <div class="relative w-full text-center">
-                <h1 
-                :class="['p-2 md:px-10 py-4 md:py-12 text-2xl md:text-4xl font-bold  title-rectangle', 
-                titleClasses]
-                ">
-                    {{ title }}
-                </h1>
-            </div>
-        </div> <!--TEXT MAIN-->
-
-        <div class="flex items-center justify-center px-10 lg:px-24">
-        <!-- Component Start -->
-          <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-6  w-full">
+  <div
+    class="container flex flex-wrap content-center justify-start py-10 mx-auto w-full"
+  >
+    <div class="flex justify-start px-4 lg:px-10 xl:px-24 2xl:px-52 mx-auto">
+      <div class="relative w-full mb-8">
+        <h1
+          v-if="title"
+          :class="[
+            'text-center text-4xl font-bold mb-8 title-rectangle max-w-screen-md',
+            titleClasses,
+          ]"
+        >
+          {{ title }}
+        </h1>
+      </div>
+    </div>
+    <!-- Component Start -->
+    <div class="w-full px-4 lg:px-10 xl:px-24 2xl:px-52 ">
+      <div class="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-6 w-full">
             <!-- Title 1 -->
             <div 
-            :class="['w-full overflow-hidden flex flex-col justify-center items-center p-2 md:py-10 border border-gray-400 rounded-md',
+            :class="['w-full overflow-hidden flex flex-col justify-center items-center p-2 md:py-10 border border-gray-300 rounded-md transition duration-300 ease-in hover:shadow-xl py-20',
             bodyClasses]
             "
-            v-for="card in cards" :key="card.title">
+            v-for="card in cards" :key="card.title"
+            > 
                 <div class="">
                     <img 
-                    class="object-center object-cover w-24 h-24 mb-10" 
+                    class="object-center object-cover w-16 h-16 mb-10" 
                     :src="card.image" 
                     alt="">
                 </div>
 
                 <div class="flex flex-col ">
-                    <h4 
-                    :class="['text-xl md:text-2xl font-semibold text-center mb-10',
-                    titleClasses]
-                    ">
-                        {{ card.title }}
-                    </h4>
-                    <p 
-                    :class="['text-sm md:text-lg text-center font-bold text-gray-500', 
-                    textClasses] 
-                    ">
-                        {{ card.text }}
-                    </p>
+                    <a
+                      :href="card.link"
+                      :class="[
+                        'text-2xl font-bold mb-4 text-center pt-4 px-2 md:px-6 transition duration-150 ease-in hover:text-primary cursor-pointer	',
+                        titleClasses,
+                      ]"
+                      target="blank"
+                    >
+                      {{ card.text }}
+                    </a>
                 </div>
             </div>
-          </div>
+            
         </div>
-
-</div> <!--Main-->
-    
+    </div>
+  </div>
 </template>
+
 <script>
 export default {
   props: {
-    title: {
-      type: String,
-      required: true,
-    },
     cards: {
       type: Array,
       required: true,
     },
-    // cardTitle: {
-    //   type: String,
-    //   required: true,
-    // },
-    image: {
+    title: {
       type: String,
-      default: '/img/banner01.jpg',
+      default: '',
     },
+    // image: {
+    //   type: String,
+    //   default: '/img/banner01.jpg',
+    // },
     bodyClasses: {
       type: String,
       default: '',
@@ -79,10 +75,6 @@ export default {
       default: '',
     },
     textClasses: {
-      type: String,
-      default: '',
-    },
-    subtitleClasses: {
       type: String,
       default: '',
     },
