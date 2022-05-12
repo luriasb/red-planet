@@ -8,13 +8,13 @@
         </div><!--Image-->
 
         <div 
-        :class="['w-full md:w-1/2 flex flex-wrap content-center bg-gray-100 justify-start px-2 py-10  md:px-8 2xl:p-32',
+        :class="['w-full md:w-1/2 flex flex-wrap content-center bg-gray-100 py-20',
         bodyClasses,
         ]"> <!--Main-->
             <!--Header-->
-          <div class="mb-8 w-full relative">
+          <div class="mb-8 w-full px-4 md:px-10 lg:px-4 xl:px-20 2xl:px-32">
               <h1 
-              :class="['text-2xl md:text-4xl font-bold  text-gray-900 title-rectangle ',
+              :class="['text-4xl font-bold  text-gray-900 title-rectangle relative ',
               titleClasses]">
                   {{ title }}
               </h1>
@@ -26,9 +26,9 @@
           class="w-full"
           >
               <ul class="list-none ">
-              <li class="py-2"> <!--Li1-->
+              <li class="pb-3 px-4 md:px-10 lg:px-4 xl:px-20 2xl:px-32"> <!--Li1-->
                   <div class="flex items-center ">
-                      <div class="text-yellow-500">
+                      <div class="text-primary">
                           <svg 
                           class="h-3 md:h-4 w-3 md:w-4"
                           fill="currentColor"
@@ -39,7 +39,7 @@
                       </div>
                       <div class="">
                           <h4 
-                          :class="['text-gray-500 font-bold text-base pl-3 md:text-xl', textClasses]">
+                          :class="['text-gray-500 font-semibold text-base pl-3 md:text-lg', textClasses]">
                           {{ list.text }}
                           </h4>
                       </div>
