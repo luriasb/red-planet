@@ -1,62 +1,88 @@
-<template> 
-<div class="container mx-auto py-16"> <!--Main-->
-  <div class="w-full "> <!--TEXT MAIN-->
-    <div class="px-8 lg:px-24 ">
-      <div class="relative ">
-        <h1 
-        :class="['py-4 md:py-4 text-2xl md:text-4xl font-bold  title-rectangle ',
-        titleClasses]">
+<template>
+  <div class="container py-16 mx-auto">
+    <!--Main-->
+    <div class="w-full">
+      <!--TEXT MAIN-->
+      <div class="relative px-4 lg:px-10 xl:px-24 2xl:px-52">
+        <div class="flex justify-center">
+          <h1
+            :class="[
+              'py-4 md:py-4 text-4xl font-bold relative title-rectangle max-w-screen-md text-center',
+              titleClasses,
+            ]"
+          >
             {{ title }}
-        </h1>
-      </div>
+          </h1>
+        </div>
 
-      <div class="my-6 flex justify-center"> <!--Button-->
+        <div class="flex justify-center my-6">
+          <!--Button-->
 
-        <a :class="['bg-black px-12 py-3.5 font-semibold text-white inline-flex items-center rounded-md transform ease-in duration-100 hover:bg-yellow-500 min-w-24 ',
-        textClasses]" 
-        :href="link"
-        v-if="link">
+          <a
+            v-if="link"
+            :class="[
+              'bg-black px-12 py-3.5 font-semibold text-white inline-flex items-center rounded-md transition duration-150 ease-in hover:bg-primary min-w-24 ',
+              textClasses,
+            ]"
+            :href="link"
+            target="blank"
+          >
             <span class="">
-                {{ link || 'Ver más' }}
+              {{ button || 'Ver más' }}
             </span>
-        </a>
-          
-      </div> <!--Button-->
+          </a>
+        </div>
+        <!--Button-->
+      </div>
     </div>
-  </div> <!--TEXT MAIN-->
+    <!--TEXT MAIN-->
 
-  <div class="mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-8 px-8 lg:px-24 ">
-
-    <div class="relative w-full h-96 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg" 
-    :style="`background-image: url(${card.image})`"
-    v-for="card in cards" :key="card.title"
+    <div
+      class="grid grid-cols-1 px-4 mt-16 lg:mt-20 md:grid-cols-2 gap-x-6 gap-y-8 lg:px-10 xl:px-24 2xl:px-52"
     >
-      <div  
-      :class="['absolute top-20 left-8 rounded-lg bg-yellow-500 w-1/2 h-3/4 transform hover:scale-110 ease-in duration-100 ', 
-      bodyClasses]">
-          <div class="flex flex-wrap w-full h-full px-4 sm:px-6 lg:px-10 items-center">
-            <h2 
-            :class="['text-white text-lg md:text-2xl font-bold w-full',
-            subTitleClasses]">
-                {{ card.title }}
+      <div
+        v-for="card in cards"
+        :key="card.title"
+        class="relative w-full overflow-hidden bg-center bg-cover rounded-lg shadow-lg h-96 group"
+        :style="`background-image: url(${card.image})`"
+      >
+        <div
+          :class="[
+            'absolute top-16 left-8 rounded-lg bg-primary w-1/2 md:w-3/4 lg:w-1/2 h-3/4 transform hover:scale-110 ease-in duration-200 ',
+            bodyClasses,
+          ]"
+        >
+          <div
+            class="flex flex-wrap items-center w-full h-full px-4 sm:px-6 lg:px-10"
+          >
+            <h2
+              :class="[
+                'text-white text-2xl font-bold w-full',
+                subTitleClasses,
+              ]"
+            >
+              {{ card.title }}
             </h2>
-            <a :class="['text-white text-base md:text-lg font-bold cursor-pointer',
-            textClasses]" 
-            :href="card.link"
-            v-if="card.link">
-                <span class="">
-                    {{ card.buttonText || 'Ver más' }}
-                </span>
+            <a
+              v-if="card.link"
+              :class="[
+                'text-white text-base md:text-lg font-bold cursor-pointer',
+                textClasses,
+              ]"
+              :href="card.link"
+              target="blank"
+            >
+              >
+              <span class="">
+                {{ card.buttonText || 'Ver más' }}
+              </span>
             </a>
           </div>
+        </div>
       </div>
     </div>
-
   </div>
-
-</div> <!--Main-->
-
-
+  <!--Main-->
 </template>
 
 <script>
@@ -68,7 +94,6 @@ export default {
     },
     button: {
       type: String,
-
     },
     cards: {
       type: Array,
