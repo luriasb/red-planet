@@ -139,6 +139,47 @@ Card11:
     ig: 'http://reference.sketchdaily.net/en'
     twitter: 'http://reference.sketchdaily.net/en'
     image: /img/banner02.jpg
+
+banner01: /img/oq-img4.jpg
+
+About01: we offer marketing and consulting services for businesses
+Text01: 'tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet, massa fringilla leo orci. Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered'
+
+Title02: making differences
+Service02:
+  - title: 'business growth'
+    text: 'sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.'
+    image: /img/icon07.svg
+  - title: 'finance advice'
+    text: 'sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.'
+    image: /img/icon08.svg
+  - title: 'global solution'
+    text: 'sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.'
+    image: /img/icon09.svg
+
+Title03: meet avivon consultancy
+Text03: 'We know the importance of delivering the best customer experience.'
+boton: 'get started'
+link: 'https://www.svgrepo.com/vectors/setting/2'
+
+Title04: our easy steps
+Card04:
+  - title: 'easy starting'
+    text: 'sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.'
+    number: '01'
+  - title: 'quick process'
+    text: 'sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.'
+    number: '02'
+  - title: 'going good'
+    text: 'sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.'
+    number: '03'
+  - title: 'happy ending'
+    text: 'sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.'
+    number: '04'
+
+Title05: '"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"'
+Name05: Shirley Smith
+Text05: 'avivon founder'
 ---
 ​
 <!-- Define tus componentes aquí-->
@@ -154,4 +195,9 @@ Card11:
 <service-09 :title="Title09" :cards="Card09"></service-09>
 <service-10 :title="Title10" :cards="Card10" :image="banner01" :video="videos"></service-10>
 <service-11 :title="Title11" :cards="Card11"></service-11>
+<about-05 :title="About01" :text="Text01"></about-05>
+<service-12 :title="Title02" :cards="Service02"></service-12>
+<banner-02 :title="Title03" :subtitle="Text03" :button-text="boton" :link="link"></banner-02>
+<service-13 :title="Title04" :cards="Card04"></service-13>
+<testimonial-01 :title="Title05" :text="Text05" :name="Name05" ></testimonial-01>
 </div>

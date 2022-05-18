@@ -29,7 +29,7 @@
                 subTitleClasses,
               ]"
             >
-              {{ subTitle }}
+              {{ subtitle }}
             </p>
           </div>
           <div v-if="buttonText" class="mt-8">
@@ -56,7 +56,7 @@ export default {
       type: String,
       
     },
-    subTitle: {
+    subtitle: {
       type: String,
       
     },

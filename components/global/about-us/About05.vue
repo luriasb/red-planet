@@ -27,7 +27,7 @@
             textClasses,
           ]"
         >
-          {{ subtitle }}
+          {{ text }}
         </p>
       </div>
       <!--Header-->
@@ -58,7 +58,7 @@ export default {
       type: String,
       required: true,
     },
-    subtitle: {
+    text: {
       type: String,
       required: true,
     },
