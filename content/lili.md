@@ -180,6 +180,89 @@ Card04:
 Title05: '"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"'
 Name05: Shirley Smith
 Text05: 'avivon founder'
+
+banner01: /img/oq-img2.jpg
+Icono: /img/icon08.svg
+Title: a focused team with a specialized skills
+Subtitle: About avison consultancy
+Contenido: "tincidunt elit magnis nulla facilisis sagittis maecenas.sapien nunc amet ultrices, doloresi ipsum velit purus aliquet, massa fringilla leo orci. lorem ipsum dolors sit amet elit magni amet ultrices purus aliquet."
+Name: Jessica Brown
+Post: founder of avivon
+
+Card14:
+  - title: business strategy
+    text: 'research beyond the business'
+    link: 'http://reference.sketchdaily.net/en'
+    image: /img/banner02.jpg
+  - title: risk management
+    text: 'financial marketing advice'
+    link: 'http://reference.sketchdaily.net/en'
+    image: /img/banner02.jpg
+  - title: thought leadership
+    text: 'substancial business growth'
+    link: 'http://reference.sketchdaily.net/en'
+    image: /img/banner02.jpg
+
+Title02: 'testimonials'
+Card09:
+  - text: 'Lorem ipsum solor sit amet, consecterur adisclipng. elit culpa aut commodi arcgghiteco deletus'
+    avatar: /img/icon05.svg
+    name: 'jessica brown'
+    occupation: 'director'
+  - text: 'Lorem ipsum solor sit amet, consecterur adisclipng. elit culpa aut commodi arcgghiteco deletus'
+    avatar: /img/icon08.svg
+    name: 'jessica brown'
+    occupation: 'director'
+  - text: 'Lorem ipsum solor sit amet, consecterur adisclipng. elit culpa aut commodi arcgghiteco deletus'
+    avatar: /img/icon02.svg
+    name: 'jessica brown'
+    occupation: 'director'
+
+About07: 'numbers speak'
+Card07:
+  - text: '678'
+    image: /img/icon05.svg
+    description: 'businesses chooses avivon agency'
+  - text: '908'
+    image: /img/icon08.svg
+    description: 'projects are completed by avivon'
+  - text: '908'
+    image: /img/icon02.svg
+    description: 'customers are satisfied with our services'
+
+mision1: get the best consultancy from your experts advisor.
+text1: 'tincidunt elit magnis nulla facilisis sagittis tincidunt elit magnis nulla facilisis sagittis tincidunt elit magnis nulla facilisis sagittis tincidunt elit magnis nulla facilisis sagittis'
+text2: 'tincidunt elit magnis nulla facilisis sagittis tincidunt elit magnis nulla facilisis sagittis tincidunt elit magnis nulla facilisis sagittis tincidunt elit magnis nulla facilisis sagittis'
+
+Card15:
+  - text: 'extra brilliant'
+    title: top-notch sonsultation provder. 
+    avatar: /img/about02.jpg
+    image: /img/about02.jpg
+    link: 'http://reference.sketchdaily.net/en'
+    button: 'read more'
+  - text: 'extra brilliant'
+    title: top-notch sonsultation provder. 
+    avatar: /img/about02.jpg
+    image: /img/about02.jpg
+    link: 'http://reference.sketchdaily.net/en'
+    button: 'read more'
+  - text: 'extra brilliant'
+    title: top-notch sonsultation provder. 
+    avatar: /img/about02.jpg
+    image: /img/about02.jpg
+    link: 'http://reference.sketchdaily.net/en'
+    button: 'read more'
+  - text: 'extra brilliant'
+    title: top-notch sonsultation provder. 
+    avatar: /img/about02.jpg
+    image: /img/about02.jpg
+    link: 'http://reference.sketchdaily.net/en'
+    button: 'read more'
+
+Texto03: 'we know the importance of delivering the best customer experience.'
+Link03: 'http://reference.sketchdaily.net/en'
+Boton: get started
 ---
 ​
 <!-- Define tus componentes aquí-->
@@ -200,4 +283,11 @@ Text05: 'avivon founder'
 <banner-02 :title="Title03" :subtitle="Text03" :button-text="boton" :link="link"></banner-02>
 <service-13 :title="Title04" :cards="Card04"></service-13>
 <testimonial-01 :title="Title05" :text="Text05" :name="Name05" ></testimonial-01>
+<about-06 :image="banner01" :title="Title" :subtitle="Subtitle" :content="Contenido" :name="Name" :post="Post" :icon="Icono" ></about-06>
+<service-14 :cards="Card14"></service-14>
+<testimonial-02 :title="Title02" :cards="Card09"></testimonial-02>
+<about-07 :title="About07" :cards="Card07" parallax></about-07>
+<banner-03 :text="Texto03" :link="Link03" :button-text="Boton"></banner-03>
+<mission-01 :title="mision1" :text1="text1" :text2="text2" :image="banner01"></mission-01>
+<service-15 :cards="Card15"></service-15>
 </div>
