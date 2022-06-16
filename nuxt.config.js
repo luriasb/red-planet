@@ -26,7 +26,7 @@ export default {
     ],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css  
+  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   tailwindcss: {
@@ -55,12 +55,14 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-facebook-pixel-module',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -68,4 +70,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID || '', // Use as fallback if no runtime config is provided
+  },
+  facebook: {
+    pixelId: process.env.FB_PIXEL_ID || '',
+  },
 }

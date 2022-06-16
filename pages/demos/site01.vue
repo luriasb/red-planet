@@ -8,7 +8,7 @@
 export default {
   layout: 'default',
   async asyncData({ $content }) {
-    const page = await $content('pruebas').fetch()
+    const page = await $content('site01').fetch()
     // eslint-disable-next-line
     console.log(page)
     return {

@@ -1,22 +1,29 @@
 ---
+#
+
+title: RedPlanet Demo Site
+description: This is a simple example of a Red Planet site
+keywords: demo, red planet, yeah
+image: /img/logo.png
+
 # Define tus variables debajo de esta linea
 pageTitle: IndeXXX
 pageDescription: This is a page description boy!
 
-headerTitle: Title
-headerSubTitle: Extremely very long subtitle
+headerTitle: consulting agency for every business
+headerSubTitle: we make difference
 
 headerTitle01: Consulting agency
 headerSubTitle01: We make difference
-headerButtonText01: Ver másss
-headerLink01: https://youtube.com
+headerButtonText01: get started
+headerLink01: '#first'
 
 videoEmbed: <iframe width="560" height="315" src="https://www.youtube.com/embed/RLk7Lho7lDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 siteName: Mi Sitio
 siteLogo: /img/logo.png
 
-hero01: /img/hero01.jpg
+hero01: /img/hero_home_01.jpg
 
 links:
   - text: Misión
@@ -79,6 +86,50 @@ nameAbout04: Federica Marquiz
 postAbout04: CEO
 
 icon01: /img/icon01.svg
+
+formText: let’s make a call request now.
+formImage: /img/clta-img.jpg
+formSuccessMessage: Se ha enviado con exito.
+formFailureMessage: Ha habido un problema.
+
+firstColumnTitle: our address
+secondColumnTitle: extra links
+thirdColumnTitle: sign up for email alerts
+thirdColumnDescription: subscribe for latest articles and resources
+firstColumnLinks:
+  - text: '888 999 0000'
+    link: 'tel:888 999 0000'
+    type: 'phone'
+  - text: 'help@redplanet.com.mx'
+    link: 'mailto:help@redplanet.com.mx'
+    type: 'mail'
+  - text: 'Servicios855 road, broklyn street, new york 600'
+    link: ''
+    type: 'address'
+secondColumnLinks01:
+  - text: about
+    link: '#'
+  - text: careers
+    link: '#'
+  - text: our team
+    link: '#'
+  - text: approach
+    link: '#'
+  - text: case studies
+    link: '#'
+secondColumnLinks02:
+  - text: services
+    link: '#'
+  - text: locations
+    link: '#'
+  - text: clients
+    link: '#'
+  - text: help
+    link: '#'
+  - text: contact
+    link: '#'
+
+copyright: '©copyright 2020 by Layerdrops.com'
 ---
 
 <!-- Define tus componentes aquí-->
@@ -89,14 +140,15 @@ icon01: /img/icon01.svg
   <!-- <header-01 id="header01" :title="headerTitle01" :sub-title="headerSubTitle01" :image="hero01" :button-text="headerButtonText01" :link="headerLink01" ></header-01> -->
   <header-03 id="header03" :title="headerTitle" :sub-title="headerSubTitle" :image="hero01" :button-text="headerButtonText01" :link="headerLink01"></header-03>
   <!-- <header-04 id="header04" :title="headerTitle" :sub-title="headerSubTitle" :image="hero01" ></header-04> -->
-  <about-01 :title="titleAbout01" :sub-title="subTitleAbout01" :image="imageAbout01" :text="textAbout01" :name="nameAbout01" :post="postAbout01" :image="hero01" ></about-01>
+  <about-01 id="first" :title="titleAbout01" :sub-title="subTitleAbout01" :image="imageAbout01" :text="textAbout01" :name="nameAbout01" :post="postAbout01" :image="hero01" ></about-01>
   <about-02 :title="titleAbout02" :text="textAbout02" :image="imageAbout01" :text="textAbout01" :button-text="buttonTextAbout02" :image01="image01About02" :image02="image02About02" ></about-02>
   <about-03  :title="titleAbout03" :text01="text01About03" :text02="text02About03" :image="imageAbout03"></about-03>
   <about-04 :text="textAbout04" :image="imageAbout04" :name="nameAbout04" :post="postAbout04"></about-04>
+  <form-01 :text="formText" :image="formImage" :success-message="formSuccessMessage" :failure-message="formFailureMessage" ></form-01>
+  <footer-02 :first-column-title="firstColumnTitle" :second-column-title="secondColumnTitle" :third-column-title="thirdColumnTitle" :copyright="copyright" :third-column-description="thirdColumnDescription" :first-column-links="firstColumnLinks" :second-column-links01="secondColumnLinks01" :second-column-links02="secondColumnLinks02" :social-links="socialLinks" ></footer-02>
   <!-- <service-01 id="header01" :title="headerTitle" :sub-title="headerSubTitle" :image="hero01" ></service-01>
   <service-05 :title="title05" :text="text05" :cards="cartas"></service-05>
   <service-10 id="header01" :title="headerTitle" :sub-title="headerSubTitle" :image="hero01" ></service-10>
   <service-09 id="header01" :title="headerTitle" :sub-title="headerSubTitle" :image="hero01" ></service-09> -->
 
-  <!-- <service-03></service-03> -->
 </div>
