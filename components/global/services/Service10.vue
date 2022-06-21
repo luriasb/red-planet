@@ -80,11 +80,11 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: false,
     },
     cards: {
       type: Array,
-      required: true,
+      required: false,
     },
     image: {
       type: String,

@@ -58,11 +58,11 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: false,
     },
     lists: {
       type: Array, 
-      required: true,
+      required: false,
     },
     image: {
       type: String,
