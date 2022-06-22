@@ -140,8 +140,6 @@ Card11:
     twitter: 'http://reference.sketchdaily.net/en'
     image: /img/banner02.jpg
 
-banner01: /img/oq-img4.jpg
-
 About01: we offer marketing and consulting services for businesses
 Text01: 'tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet, massa fringilla leo orci. Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many variations of passages of available but the majority have suffered'
 

@@ -45,7 +45,7 @@
                         {{ card.title }}
                         </p>
                         <img
-                            class="w-16 h-16 rounded-full object-center object-cover my-10" 
+                            class="w-16 h-16 object-center object-cover my-10" 
                             :src="card.avatar"
                             alt=""
                         >

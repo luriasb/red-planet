@@ -1,9 +1,9 @@
 <template>
   <div
-    class="container flex flex-wrap items-stretch px-4 lg:px-10 xl:px-24 2xl:px-52 2xl:py-28 pt-24"
+    class="container flex flex-wrap items-stretch px-4 lg:px-10 xl:px-24 2xl:px-52 2xl:py-28 pt-24 mx-auto "
   >
     <div
-      class="flex items-center w-full h-full lg:w-1/2 lg:text-left"
+      class="flex items-center w-full h-full lg:w-1/2 lg:text-left "
     >
       <div class="relative flex flex-col w-full min-w-0 pr-0 lg:pr-4 ">
         <h4
